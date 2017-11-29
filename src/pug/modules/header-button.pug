@@ -1,0 +1,7 @@
+mixin header-button({ type, href = false } = {})
+  - isLink = Boolean(href)
+  - typeClass = type ? `header-button_${type}` : false
+  - jsClass = isLink ? false : 'js-header-button'
+  - tag = isLink ? 'a' : 'button'
+  #{tag}.header-button(class=[typeClass, jsClass] href=href)&attributes(attributes)
+    span.header-button__icon

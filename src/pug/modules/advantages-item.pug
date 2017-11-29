@@ -1,0 +1,8 @@
+mixin advantages-item({ image, text, video } = {})
+  .advantages-item&attributes(attributes)
+    img(src=image alt='Иконка').advantages-item__image
+    p.advantages-item__text= text
+      if video
+        span.advantages-item__link-wrapper.mobile-hidden
+          a(href=video).advantages-item__video-link.link.link_container
+            span.link__text Смотреть видео

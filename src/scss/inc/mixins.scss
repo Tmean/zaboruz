@@ -1,0 +1,196 @@
+@mixin reset() {
+  width: auto;
+  height: auto;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+@mixin clearfix() {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+@mixin gutters() {
+  @each $bp, $bp-value in $breakpoints {
+    @media only screen and (min-width: $bp-value) {
+      padding-left: map-get($gutters, $bp);
+      padding-right: map-get($gutters, $bp);
+    }
+  }
+}
+
+@mixin breakpoint-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @if map-get($breakpoints, $breakpoint) == $min-width {
+      @content;
+    }
+
+    @else {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@function get-upper-breakpoint($breakpoint) {
+  $val: map-get($breakpoints, $breakpoint);
+
+  @if $val != $max-width {
+    $addition: 0px;
+    $resultBp: null;
+    @each $bp, $bp-value in $breakpoints {
+      @if ($bp-value - $val < $addition or $addition == 0px) and $bp-value - $val > 0 {
+        $addition: $bp-value - $val;
+        $resultBp: $bp;
+      }
+    }
+
+    @if $val + $addition == $val {
+      @return none;
+    }
+    @else {
+      @return $resultBp;
+    }
+  }
+
+  @else {
+    @return none;
+  }
+}
+
+@function get-upper-breakpoint-value($breakpoint) {
+  @return map-get($breakpoints, get-upper-breakpoint($breakpoint));
+}
+
+@mixin breakpoint-down($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: #{get-upper-breakpoint-value($breakpoint) - 1}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin breakpoint-between($breakpoint-from, $breakpoint-to) {
+  $from: 0px;
+  @if map-has-key($breakpoints, $breakpoint-from) {
+    @if map-get($breakpoints, $breakpoint-from) != $min-width {
+      $from: map-get($breakpoints, $breakpoint-from);
+    }
+    @if map-has-key($breakpoints, $breakpoint-to) {
+      @media (min-width: $from) and (max-width: #{map-get($breakpoints, $breakpoint-to) - 1}) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $from) {
+        @content;
+      }
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint-from}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin breakpoint-only($breakpoint) {
+  $from: 0px;
+  @if map-has-key($breakpoints, $breakpoint) {
+    @if map-get($breakpoints, $breakpoint) != $min-width {
+      $from: map-get($breakpoints, $breakpoint);
+    }
+
+    @if get-upper-breakpoint-value($breakpoint) == null {
+      @media (min-width: $from) {
+        @content;
+      }  
+    }
+    @else {
+      @media (min-width: $from) and (max-width: #{get-upper-breakpoint-value($breakpoint) - 1}) {
+        @content;
+      }
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin icon($name, $ext: 'png') {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: image-width('../img/icons/#{$name}.#{$ext}') image-height('../img/icons/#{$name}.#{$ext}');
+  width: image-width('../img/icons/#{$name}.#{$ext}');
+  height: image-height('../img/icons/#{$name}.#{$ext}');
+
+  @if ($ext != 'svg') {
+    icon: url('../img/icons/#{$name}.#{$ext}');
+  } @else {
+    background-image: url('../img/icons/#{$name}.#{$ext}');
+  }
+}
+
+@mixin gradient-animation($gradient, $gradientHover, $gradientActive, $transTime) {
+  background-size: 100%;
+  background-image: $gradient;
+  position: relative;
+  z-index: 1;
+
+  &::before, &::after {
+    border-radius: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity $transTime ease-in-out;
+  }
+
+  &::before {
+    background-image: $gradientHover;
+  }
+
+  &::after {
+    background-image: $gradientActive;
+  }
+
+  &:hover {
+     &::before {
+       opacity: 1; 
+     }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0;
+      transition: none;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}

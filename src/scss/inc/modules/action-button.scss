@@ -1,0 +1,23 @@
+.action-button {
+  @include reset();
+  display: inline-block;
+  font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+  color: #ffffff;
+  border-radius: 100px;
+  background-color: #489de0;
+  padding: 5px 25px 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5fafef;
+  }
+
+  &.is-active {
+    cursor: default;
+    background-color: #e6bb07;
+  }
+}

@@ -1,0 +1,4 @@
+mixin call-to-action({ href = false } = {})
+  - tag = href ? 'a' : 'button'
+  #{tag}.call-to-action(href=href)&attributes(attributes)
+    block

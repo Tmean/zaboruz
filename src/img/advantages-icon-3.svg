@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_advant-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#489DE0" offset="0%"></stop>
+            <stop stop-color="#2F88CF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.37611607%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F1BF00" offset="0%"></stop>
+            <stop stop-color="#DF8B00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_advant-3">
+            <rect id="Rectangle-5" fill="#CBE8FF" x="20" y="77" width="50" height="3" rx="1.5"></rect>
+            <polygon id="Page-1" stroke="url(#linearGradient-1)" stroke-width="3" fill="#FFFFFF" points="45 14.9996 35.111 35.0366 13 38.2496 29 53.8446 25.223 75.8676 45 65.4696 64.777 75.8676 60.999 53.8446 77 38.2496 54.888 35.0366"></polygon>
+            <path d="M41.3381,49.6092 L46.8481,49.6092 C48.4931,49.6092 49.7461,49.2212 50.6061,48.4432 C51.4661,47.6692 51.8961,46.5352 51.8961,45.0472 C51.8961,43.6952 51.4501,42.6032 50.5581,41.7692 C49.6661,40.9342 48.4611,40.5102 46.9431,40.5002 L41.3381,40.5002 L41.3381,49.6092 Z M46.6731,56.7912 L41.3381,56.7912 L41.3381,61.1862 L38.2961,61.1862 L38.2961,56.7912 L35.0001,56.7912 L35.0001,54.2902 L38.2961,54.2902 L38.2961,52.1092 L35.0001,52.1092 L35.0001,49.6092 L38.2961,49.6092 L38.2961,38.0002 L46.8481,38.0002 C49.3321,38.0002 51.3011,38.6312 52.7561,39.8952 C54.2101,41.1582 54.9381,42.8672 54.9381,45.0232 C54.9381,47.2842 54.2391,49.0272 52.8431,50.2542 C51.4471,51.4802 49.4651,52.0982 46.8961,52.1092 L41.3381,52.1092 L41.3381,54.2902 L46.6731,54.2902 L46.6731,56.7912 Z" id="Fill-1" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

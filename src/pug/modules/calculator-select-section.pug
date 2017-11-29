@@ -1,0 +1,17 @@
+mixin calculator-select-section({ items } = {})
+  section.calculator-select-section.section&attributes(attributes)
+    .container-fluid
+      +decorated-heading({
+        text: 'Выберите секцию забора',
+      }).calculator-select-section__heading
+      .calculator-select-section__items
+        .row
+          for item, index in items
+            .calculator-select-section__item-container.col-6.col-tablet-4.col-desktop-3(class=(index > 5 ? 'desktop-only' : false))
+              +calculator-select-section-item(item).calculator-select-section__item
+      .calculator-select-section__items.calculator-select-section__items_additional.js-calculator-select-section__additional
+        .row
+          for item, index in items
+            .calculator-select-section__item-container.col-6.col-tablet-4.col-desktop-3(class=(index > 5 ? 'desktop-only' : false))
+              +calculator-select-section-item(item).calculator-select-section__item
+      button.calculator-select-section__show-all.js-calculator-select-section__button Показать все возможные секции

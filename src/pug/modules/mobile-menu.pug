@@ -1,0 +1,48 @@
+mixin mobile-menu()
+  .mobile-menu.js-mobile-menu
+    ul.mobile-menu__list.mobile-menu__list_first-level
+        li.mobile-menu__item-container
+          a(href='#').mobile-menu__item Заборы
+            span.mobile-menu__icon.mobile-menu__icon_fence
+        li.mobile-menu__item-container
+          a(href='#').mobile-menu__item.mobile-menu__item_nesting Ворота
+            span.mobile-menu__icon.mobile-menu__icon_gate
+            span.mobile-menu__arrow.js-mobile-menu__arrow
+          ul.mobile-menu__list.mobile-menu__list_second-level
+            li.mobile-menu__item-container
+              a(href='#').mobile-menu__item.mobile-menu__item_nesting Кованые
+                span.mobile-menu__arrow.js-mobile-menu__arrow
+              ul.mobile-menu__list.mobile-menu__list_third-level
+                li.mobile-menu__item-container
+                  a(href='#').mobile-menu__item Откатные
+                li.mobile-menu__item-container
+                  a(href='#').mobile-menu__item Распашные
+            li.mobile-menu__item-container
+              a(href='#').mobile-menu__item.mobile-menu__item_nesting Сварные
+                span.mobile-menu__arrow.js-mobile-menu__arrow
+              ul.mobile-menu__list.mobile-menu__list_third-level
+                li.mobile-menu__item-container
+                  a(href='#').mobile-menu__item Откатные
+                li.mobile-menu__item-container
+                  a(href='#').mobile-menu__item Распашные
+            li.mobile-menu__item-container
+              a(href='#').mobile-menu__item.mobile-menu__item_nesting С элементами ковки
+                span.mobile-menu__arrow.js-mobile-menu__arrow
+              ul.mobile-menu__list.mobile-menu__list_third-level
+                li.mobile-menu__item-container
+                  a(href='#').mobile-menu__item Откатные
+                li.mobile-menu__item-container
+                  a(href='#').mobile-menu__item Распашные
+        li.mobile-menu__item-container
+          a(href='#').mobile-menu__item Калитки
+            span.mobile-menu__icon.mobile-menu__icon_wicket
+        li.mobile-menu__item-container
+          a(href='#').mobile-menu__item Столбы
+            span.mobile-menu__icon.mobile-menu__icon_pillar
+        li.mobile-menu__item-container
+          a(href='#').mobile-menu__item Ограждения
+            span.mobile-menu__icon.mobile-menu__icon_barrier
+        li.mobile-menu__item-container
+          a(href='#').mobile-menu__item Информация
+        li.mobile-menu__item-container.desktop-only
+          a(href='#').mobile-menu__item Контакты

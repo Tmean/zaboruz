@@ -1,0 +1,62 @@
+.catalog-preview-item {
+
+  &__image-container {
+    text-align: center;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__content {
+    padding: 0 10px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    text-align: center;
+    color: #2f88cf;
+    margin-top: 20px;
+
+    @include breakpoint-only(tablet) {
+      margin-top: 29px;
+    }
+
+    @include breakpoint-only(desktop) {
+      margin-top: 28px;
+    }
+  }
+  
+  &__price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #df8b00;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__price-value {
+    font-size: 20px;
+  }
+
+  &__price-grey {
+    font-weight: normal;
+    color: #8a8a8a;
+  }
+
+  &__link-container {
+    text-align: center;
+  }
+
+  &__link {
+    margin-top: 15px;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 25px;
+    }
+  }
+}

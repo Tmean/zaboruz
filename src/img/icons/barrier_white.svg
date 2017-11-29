@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_menu-5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3,5.91442407 C2.41739982,5.70823894 2,5.15245384 2,4.5 C2,3.67219388 2.6719082,3 3.50063748,3 C4.3280918,3 5,3.67219388 5,4.5 C5,5.1526871 4.58230167,5.70863633 4,5.91464508 L4,9 L20,9 L20,5.91442407 C19.4173998,5.70823894 19,5.15245384 19,4.5 C19,3.67219388 19.6719082,3 20.5006375,3 C21.3280918,3 22,3.67219388 22,4.5 C22,5.1526871 21.5823017,5.70863633 21,5.91464508 L21,20.5212734 C21,20.7855305 20.776,21 20.5,21 C20.224,21 20,20.7855305 20,20.5212734 L20,18 L4,18 L4,20.5212734 C4,20.7855305 3.776,21 3.5,21 C3.224,21 3,20.7855305 3,20.5212734 L3,5.91442407 Z M4,10.3587741 L4,16.4154202 L10.8017249,13.3870972 L4,10.3587741 Z M5.14560561,17 L18.9164375,17 L12.0310216,13.9344153 L5.14560561,17 Z M20,10.3863975 L13.2603182,13.3870972 L20,16.3877968 L20,10.3863975 Z M18.4092697,10 L5.65277342,10 L12.0310216,12.839779 L18.4092697,10 Z" id="path-1"></path>
+        <filter x="-2.5%" y="-2.8%" width="105.0%" height="111.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16760077 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_menu-5">
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+.popup-light {
+  width: 300px;
+  background-color: white;
+  border-radius: 3px;
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transform: translateX(-50%) translateY(20px);
+  display: none;
+  opacity: 0;
+  transition: opacity .5s ease-in-out,
+  transform .5s ease-in-out;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  z-index: 100;
+
+  &.is-active {
+    display: inline-block;
+  }
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+  }
+}

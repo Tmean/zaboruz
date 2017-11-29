@@ -1,0 +1,30 @@
+mixin additional-production({} = {})
+  section.additional-production.section&attributes(attributes)
+    .container-fluid
+      h1.section__heading Дополнительно делаем
+      .row
+        .col-12.col-tablet-3
+          +additional-production-item({
+            image: 'img/additional-production-item-1.png',
+            image2x: 'img/additional-production-item-1@2x.png',
+            title: 'Калитки',
+          }).additional-production__item
+        .col-12.col-tablet-3
+          +additional-production-item({
+            image: 'img/additional-production-item-2.png',
+            image2x: 'img/additional-production-item-2@2x.png',
+            title: 'Металлические ворота',
+            description: 'Распашные и откатные',
+          }).additional-production__item
+        .col-12.col-tablet-3
+          +additional-production-item({
+            image: 'img/additional-production-item-3.png',
+            image2x: 'img/additional-production-item-3@2x.png',
+            title: 'Столбы для заборов',
+          }).additional-production__item
+        .col-12.col-tablet-3
+          +additional-production-item({
+            image: 'img/additional-production-item-4.png',
+            image2x: 'img/additional-production-item-4@2x.png',
+            title: 'Газонные ограждения',
+          }).additional-production__item

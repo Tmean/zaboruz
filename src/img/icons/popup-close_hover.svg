@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_pu-close-cross hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_pu-close-cross-hover" fill="#67B1EC">
+            <g id="ic_close-cross-mobile-small" transform="translate(12.000000, 12.000000)">
+                <path d="M2.35353666,0.962893453 L15.0371065,13.6464633 C15.3873537,13.9967104 15.3873537,14.5645732 15.0371065,14.9148203 C14.6868594,15.2650674 14.1189967,15.2650674 13.7687496,14.9148203 L1.08517968,2.23125044 C0.734932565,1.88100333 0.734932565,1.31314056 1.08517968,0.962893453 C1.43542679,0.612646342 2.00328955,0.612646342 2.35353666,0.962893453 Z" id="Rectangle"></path>
+                <path d="M13.7687496,0.962893453 L1.08517968,13.6464633 C0.734932565,13.9967104 0.734932565,14.5645732 1.08517968,14.9148203 C1.43542679,15.2650674 2.00328955,15.2650674 2.35353666,14.9148203 L15.0371065,2.23125044 C15.3873537,1.88100333 15.3873537,1.31314056 15.0371065,0.962893453 C14.6868594,0.612646342 14.1189967,0.612646342 13.7687496,0.962893453 Z" id="Rectangle"></path>
+            </g>
+        </g>
+    </g>
+</svg>

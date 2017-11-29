@@ -1,0 +1,31 @@
+mixin catalog-preview
+  section.catalog-preview.section&attributes(attributes)
+    .container-fluid
+      +decorated-heading({
+        text: 'Готовые фасады заборов'
+      })
+        .catalog-preview__link-container
+          a(href='#').catalog-preview__more.link.link_container
+            span.link__text В каталог
+      .row
+        .col-12.col-tablet-4
+          +catalog-preview-item({
+            image: 'img/catalog-preview-1.png',
+            image2x: 'img/catalog-preview-1@2x.png',
+            title: 'Сварные металлические заборы',
+            price: '55 000',
+          }).catalog-preview__item
+        .col-12.col-tablet-4
+          +catalog-preview-item({
+            image: 'img/catalog-preview-2.png',
+            image2x: 'img/catalog-preview-2@2x.png',
+            title: 'Кованные металлические заборы',
+            price: '65 000',
+          }).catalog-preview__item
+        .col-12.col-tablet-4
+          +catalog-preview-item({
+            image: 'img/catalog-preview-3.png',
+            image2x: 'img/catalog-preview-3@2x.png',
+            title: 'Металлические сварные заборы с элементами ковки',
+            price: '65 000',
+          }).catalog-preview__item

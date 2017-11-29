@@ -1,0 +1,20 @@
+.mobile-table-button {
+  @include reset();
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  font-family: Roboto;
+	font-size: 16px;
+	font-weight: bold;
+  color: #ffffff;
+  border-radius: 100px;
+  background-color: #489de0;
+  padding: 6px 10px 5px;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    @include icon(table, svg);
+    margin-right: 6px;
+  }
+}

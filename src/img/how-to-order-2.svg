@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_process-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#489DE0" offset="0%"></stop>
+            <stop stop-color="#2F88CF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_process-2">
+            <path d="M51.2390074,88 L94,88 L94,22 L26,22 L26,88 L37,88 L37,103.261542 L45.161375,96.2748558 L51.2390074,88 Z" id="Combined-Shape"></path>
+            <path d="M94,88 L94,22 L26,22 L26,88 L39,88 L39,89.5 L39,99.2207616 L49,88.0651087 L49,88 L94,88 Z M95.5,91 L50.700585,91 L39,103.91834 L39,104 L36,104 L36,91 L24.5,91 L23,91 L23,19 L24.5,19 L97,19 L97,20.5 L97,91 L95.5,91 Z M52.1900635,51.1046257 C47.3792961,55.9445198 59.1875433,67.8243457 63.9983107,62.7643705 L67.7157219,59.0244524 C68.8090781,57.9244764 70.3397768,57.9244764 71.433133,59.0244524 L80.1799828,67.8243457 C81.2733391,68.9242357 81.2733391,70.464202 80.1799828,71.5641779 L77.3372566,74.2041202 C72.7451605,78.824105 60.9369133,74.2041202 50.878036,64.0843416 C40.6004875,53.9645631 36.2270626,42.0848231 40.8191587,37.4649242 L43.4432137,34.8249819 C44.5365699,33.725006 46.0672686,33.725006 47.1606248,34.8249819 L55.9074746,43.6247894 C57.0008309,44.7247653 57.0008309,46.2647316 55.9074746,47.3647075 L52.1900635,51.1046257 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_process-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#489DE0" offset="0%"></stop>
+            <stop stop-color="#2F88CF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_process-3">
+            <rect id="Rectangle-23" x="25" y="22" width="18" height="74"></rect>
+            <path d="M74.5975,58.0751 L85.5495,58.0751 C88.8215,58.0751 91.3105,57.3041 93.0205,55.7591 C94.7295,54.2191 95.5835,51.9661 95.5835,49.0071 C95.5835,46.3211 94.6985,44.1501 92.9245,42.4911 C91.1525,40.8321 88.7575,39.9911 85.7405,39.9701 L74.5975,39.9701 L74.5975,58.0751 Z M85.2015,72.3501 L74.5975,72.3501 L74.5975,81.0871 L68.5525,81.0871 L68.5525,72.3501 L61.9995,72.3501 L61.9995,67.3811 L68.5525,67.3811 L68.5525,63.0451 L61.9995,63.0451 L61.9995,58.0751 L68.5525,58.0751 L68.5525,35.0001 L85.5495,35.0001 C90.4885,35.0001 94.4025,36.2561 97.2925,38.7661 C100.1845,41.2781 101.6295,44.6761 101.6295,48.9591 C101.6295,53.4541 100.2425,56.9201 97.4675,59.3571 C94.6925,61.7951 90.7515,63.0231 85.6455,63.0451 L74.5975,63.0451 L74.5975,67.3811 L85.2015,67.3811 L85.2015,72.3501 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+            <path d="M46,20.5 L46,99 L44.5,99 L23.5,99 L22,99 L22,19 L23.5,19 L46,19 L46,20.5 Z M43,22 L25,22 L25,96 L43,96 L43,92 L33,92 L33,89 L43,89 L43,85 L38,85 L38,82 L43,82 L43,78 L33,78 L33,75 L43,75 L43,71 L38,71 L38,68 L43,68 L43,64 L33,64 L33,61 L43,61 L43,57 L38,57 L38,54 L43,54 L43,50 L33,50 L33,47 L43,47 L43,43 L38,43 L38,40 L43,40 L43,36 L33,36 L33,33 L43,33 L43,29 L38,29 L38,26 L43,26 L43,22 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

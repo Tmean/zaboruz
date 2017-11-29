@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_pu-close-cross</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_pu-close-cross" fill="#FFFFFF">
+            <g id="ic_close-cross-mobile-small">
+                <path d="M14.3535367,12.9628935 L27.0371065,25.6464633 C27.3873537,25.9967104 27.3873537,26.5645732 27.0371065,26.9148203 C26.6868594,27.2650674 26.1189967,27.2650674 25.7687496,26.9148203 L13.0851797,14.2312504 C12.7349326,13.8810033 12.7349326,13.3131406 13.0851797,12.9628935 C13.4354268,12.6126463 14.0032896,12.6126463 14.3535367,12.9628935 Z" id="Rectangle"></path>
+                <path d="M25.7687496,12.9628935 L13.0851797,25.6464633 C12.7349326,25.9967104 12.7349326,26.5645732 13.0851797,26.9148203 C13.4354268,27.2650674 14.0032896,27.2650674 14.3535367,26.9148203 L27.0371065,14.2312504 C27.3873537,13.8810033 27.3873537,13.3131406 27.0371065,12.9628935 C26.6868594,12.6126463 26.1189967,12.6126463 25.7687496,12.9628935 Z" id="Rectangle"></path>
+            </g>
+        </g>
+    </g>
+</svg>

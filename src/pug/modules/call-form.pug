@@ -1,0 +1,8 @@
+mixin call-form
+  .call-form.js-call-form
+    input(type='text' placeholder='Ваше имя').call-form__input.js-call-form__name
+    .call-form__error.js-call-form__name-error
+    input(type='text' placeholder='Ваш номер телефона').call-form__input.js-call-form__phone
+    .call-form__error.js-call-form__phone-error
+    .call-form__submit-container
+      +call-to-action.js-call-form__submit Отправить

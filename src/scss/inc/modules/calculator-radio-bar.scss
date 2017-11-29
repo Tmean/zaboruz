@@ -1,0 +1,64 @@
+$root: '.calculator-radio-bar';
+
+#{$root} {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin-left: -1px;
+    display: flex;
+
+    &:first-child {
+      margin-left: 0;
+
+      #{$root}__content {
+        border-radius: 100px 0 0 100px;
+      }
+    }
+
+    &:last-child {
+      #{$root}__content {
+        border-radius: 0 100px 100px 0;
+      }
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + #{$root}__content {
+      background-image: linear-gradient(to bottom, #f1bf00, #df8b00);
+      border: none;
+      padding: 7px 6px 2px;
+      color: #ffffff;
+      cursor: default;
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 32px;
+    display: inline-block;
+    background-color: #ebf7ff;
+    padding: 6px 5px 1px;
+    font-size: 16px;
+    text-align: center;
+    color: #2f88cf;
+    border: solid 1px #cbe8ff;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  &.is-disabled {
+    pointer-events: none;
+
+    #{$root}__content {
+      background: #f2f2f2;
+      border: solid 1px #e4e4e4;
+      color: #c5c5c5;
+    }
+  }
+}

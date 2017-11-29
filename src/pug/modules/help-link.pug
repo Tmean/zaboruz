@@ -1,0 +1,3 @@
+mixin help-link({ popup, size = false })
+  - sizeClass = size ? 'help-link_small' : false
+  span.help-link.js-popup__link(data-popup=popup class=sizeClass)

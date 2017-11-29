@@ -1,0 +1,88 @@
+mixin product-description
+  section.product-description.section
+    .container-fluid
+      h1.section__heading Описание изделия
+      .row
+        .col-tablet-10.col-tablet-offset-1.col-desktop-6.col-desktop-offset-0
+          .product-description__table-container.mobile-hidden
+            table.product-description__table.js-calculator-fence__table
+              thead
+                tr
+                  th Элемент
+                  th Материал
+                  th Размер, мм
+              tbody
+                tr
+                  td Рама
+                  td Профильная труба
+                  td 40×40×2
+                tr
+                  td Наполнение горизонтали
+                  td Профильная труба
+                  td 20×10×1,5
+                tr
+                  td Наполнение вертикали
+                  td Профильная труба
+                  td 15×15×1,5
+                tr
+                  td Кованые элементы
+                    +help-link({
+                      size: 'small',
+                      popup: 'calculator-info-2',
+                    })
+                  td Профильная труба
+                  td 12×12
+                tr
+                  td Литая вставка
+                    +help-link({
+                      size: 'small',
+                      popup: 'calculator-info-2',
+                    })
+                  td Сталь
+                  td 
+                tr
+                  td Пика
+                    +help-link({
+                      size: 'small',
+                      popup: 'calculator-info-2',
+                    })
+                  td Сталь
+                  td 
+                tr
+                  td Кованая розетка
+                    +help-link({
+                      size: 'small',
+                      popup: 'calculator-info-2',
+                    })
+                  td Сталь
+                  td D90
+                tr
+                  td Закладные
+                  td Профильная труба
+                  td 40×25
+                tr
+                  td Упор в землю на распашные ворота, кованый
+                  td Сталь
+                  td 40×25
+                tr
+                  td Нащельник
+                    +help-link({
+                      size: 'small',
+                      popup: 'calculator-info-2',
+                    })
+                  td Полоса
+                  td 40×4
+                tr
+                  td Петли для навесного замка
+                  td Сталь
+                  td 
+        .product-description__mobile-table-button-container.mobile-only
+          +mobile-table-button({
+            heading: 'Изделие',
+            target: '.js-calculator-fence__table',
+          })
+        .col-12.col-tablet-10.col-tablet-offset-1.col-desktop-6.col-desktop-offset-0
+          .product-description__blueprint-container
+            img(src='img/blueprint.png' srcset='img/blueprint@2x.png 2x' alt='Чертёж').product-description__blueprint
+            .product-description__blueprint-link-container
+              a(href='#').product-description__blueprint-link.link Увеличить чертёж

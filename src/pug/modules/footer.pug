@@ -1,0 +1,35 @@
+mixin footer({} = {})
+  footer.footer&attributes(attributes)
+    +menu
+    .footer__content
+      .container-fluid
+        .row
+          .col-12.col-desktop-3
+            .footer__logo-container
+              +logo({
+                size: 'big',
+              })
+          .col-12.desktop-hidden
+            .footer__links
+              a(href='#').footer__link.link.link_white Информация
+              a(href='#').footer__link.link.link_white Контакты
+          .col-12.col-desktop-9
+            .footer__info
+              .footer__info-block.footer__info-block_location
+                .footer__info-block-line Москва, Рязанский пр-т,
+                .footer__info-block-line 81/1, стр. 3, офис 308
+              .footer__info-block.footer__info-block_phones
+                .footer__info-block-line.footer__info-block-line_bold
+                  a(href='tel:84955803036').link.link_white 8 495 580 30 36
+                .footer__info-block-line.footer__info-block-line_bold
+                  a(href='tel:88005552470').link.link_white 8 800 555 24 70
+              .footer__info-block.footer__info-block_email
+                .footer__info-block-line Пишите нам
+                .footer__info-block-line.footer__info-block-line_bold
+                  a(href='mailto:info@zaboruz.ru').link.link_white info@zaboruz.ru
+              .footer__info-block.footer__info-block_schedule
+                .footer__info-block-line.footer__info-block-line_normal Режим работы
+                .footer__info-block-line.footer__info-block-line_bold Пн–Пт с 9:00 до 18:00
+        .row
+          .col-12.col-tablet-8.col-tablet-offset-2.col-desktop-12.col-desktop-offset-0
+            p.footer__text © ООО «СтальРуз», 2010–2017. Использование текстовой и графической информации с сайта запрещено без разрешения владельца.

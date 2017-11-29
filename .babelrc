@@ -1,0 +1,13 @@
+{
+  "presets": ["es2015"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "^module-templates/(.+)": "./.tmp/module-templates/\\1"
+      }
+    }],
+    ["transform-object-rest-spread", { "useBuiltIns": true }],
+    "lodash"
+  ]
+}

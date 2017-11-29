@@ -1,0 +1,174 @@
+.footer {
+  
+  &__content {
+    background-image: linear-gradient(to bottom, #489de0, #2f88cf);
+    padding: 18px 0 20px;
+  }
+
+  &__logo-container {
+    text-align: center;
+    
+    @include breakpoint-only(desktop) {
+      text-align: left;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-left: -44px;
+
+    @include breakpoint-only(tablet) {
+      margin-top: 30px;
+      margin-left: -38px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 44px;
+
+    @include breakpoint-only(tablet) {
+      letter-spacing: 0.7px;
+      margin-left: 42px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+
+    @include breakpoint-only(tablet) {
+      width: 500px;
+      margin-left: -50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 9px;
+    }
+
+    @include breakpoint-only(desktop) {
+      flex-direction: row;
+      margin-top: 8px;
+    }
+  }
+
+  &__info-block {
+    width: 200px;
+    margin-top: 22px;
+    padding-left: 39px;
+    position: relative;
+
+    @include breakpoint-only(tablet) {
+      margin-left: 30px;
+      width: 220px;
+    }
+
+    @include breakpoint-only(desktop) {
+      margin-top: 18px;
+      width: auto;
+    }
+
+    &::before {
+      content: '';
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 12px;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      background-color: white;
+      position: absolute;
+      top: 5px;
+      bottom: 2px;
+      left: 28px;
+    }
+
+    &_location {
+      @include breakpoint-only(mobile) {
+        order: -1;
+      }
+
+      @include breakpoint-only(desktop) {
+        margin-left: 18px;
+      }
+      
+      &::before {
+        @include icon(point, svg);
+      }
+    }
+
+    &_email {
+      @include breakpoint-only(mobile) {
+        order: -1;
+      }
+
+      @include breakpoint-only(desktop) {
+        margin-left: 55px;
+      }
+
+      &::before {
+        @include icon(envelope, svg);
+      }
+    }
+
+    &_phones {
+      @include breakpoint-only(desktop) {
+        margin-left: 43px;
+      }
+
+      &::before {
+        @include icon(phone_small, svg);
+      }
+    }
+
+    &_schedule {
+      @include breakpoint-only(desktop) {
+        margin-left: 65px;
+      }
+      
+      &::before {
+        @include icon(clock, svg);
+      }
+    }
+  }
+
+  &__info-block-line {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    color: #ffffff;
+
+    &_normal {
+      font-weight: 400;
+    }
+
+    &_bold {
+      font-weight: 500;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    text-align: center;
+    color: #9dcdf3;
+    margin-top: 38px;
+
+    @include breakpoint-only(desktop) {
+      text-align: left;
+      margin-top: 35px;
+    }
+  }
+}

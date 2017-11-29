@@ -1,0 +1,71 @@
+.hero {
+  padding: 20px 0 40px;
+
+  @include breakpoint-only(tablet) {
+    padding: 20px 0 38px;
+  }
+
+  @include breakpoint-only(desktop) {
+    padding: 20px 0 65px;
+  }
+
+  &__image {
+    max-width: 100%;
+
+    @include breakpoint-only(tablet) {
+      margin-top: 30px;
+    }
+
+    @include breakpoint-only(desktop) {
+      margin-top: 53px;
+      margin-left: 8px;
+    }
+  }
+
+  &__content {
+    @include breakpoint-only(desktop) {
+      padding-left: 37px;
+      margin-top: 44px;
+    }
+  }
+
+  &__heading {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.36;
+    margin-top: 20px;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 10px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: 20px;
+    
+    @include breakpoint-up(tablet) {
+      margin-top: 22px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @include breakpoint-only(desktop) {
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  &__call-to-action {
+    margin-top: 20px;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 25px;
+    }
+  }
+}

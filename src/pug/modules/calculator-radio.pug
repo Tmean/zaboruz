@@ -1,0 +1,10 @@
+mixin calculator-radio({ items, name = Math.random(), isDisabled = false } = {})
+  .calculator-radio(class=(isDisabled ? 'is-disabled' : false))&attributes(attributes)
+    for item, index in items
+      - id = `cr-${Math.random()}`
+      .calculator-radio__item
+        input(type='radio' id=id name=name value=item.value checked=(index === 0) disabled=isDisabled).calculator-radio__item-input
+        span.calculator-radio__item-body
+          label.calculator-radio__item-title(for=id)= item.title
+          if item.content
+            .calculator-radio__item-content !{item.content}

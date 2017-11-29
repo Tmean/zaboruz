@@ -1,0 +1,9 @@
+mixin calculator-range({ min, max, step, value, units, targetClass } = {})
+  - unitslessClass = units ? false : 'calculator-range_unitsless'
+  .calculator-range.js-calculator-range(class=unitslessClass)&attributes(attributes)
+    .calculator-range__input-container
+      input(type='text' value=value).calculator-range__input.js-calculator-range__input
+      if units
+        span.calculator-range__units= units
+    .calculator-range__range-container
+      input(type='range' min=min step=step max=max value=value class=targetClass).calculator-range__target.js-calculator-range__target

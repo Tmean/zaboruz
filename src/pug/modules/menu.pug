@@ -1,0 +1,57 @@
+mixin menu({} = {})
+  .menu.mobile-hidden&attributes(attributes)
+    .menu__container.container-fluid
+      ul.menu__list.menu__list_first-level
+        li.menu__item-container
+          a(href='#').menu__item
+            span.menu__icon.menu__icon_fence
+            | Заборы
+        li.menu__item-container.js-menu__nesting
+          a(href='#').menu__item
+            span.menu__icon.menu__icon_gate
+            | Ворота
+          ul.menu__list.menu__list_second-level.js-menu__nested
+            li.menu__item-container.js-menu__nesting
+              a(href='#').menu__item.menu__item_nesting Кованые
+              ul.menu__list.menu__list_third-level.js-menu__nested
+                li.menu__item-container
+                  a(href='#').menu__item Откатные
+                li.menu__item-container
+                  a(href='#').menu__item Распашные
+            li.menu__item-container.js-menu__nesting
+              a(href='#').menu__item.menu__item_nesting Сварные
+              ul.menu__list.menu__list_third-level.js-menu__nested
+                li.menu__item-container
+                  a(href='#').menu__item Откатные
+                li.menu__item-container
+                  a(href='#').menu__item Распашные
+            li.menu__item-container.js-menu__nesting
+              a(href='#').menu__item.menu__item_nesting С элементами ковки
+              ul.menu__list.menu__list_third-level.js-menu__nested
+                li.menu__item-container
+                  a(href='#').menu__item Откатные
+                li.menu__item-container
+                  a(href='#').menu__item Распашные
+        li.menu__item-container
+          a(href='#').menu__item
+            span.menu__icon.menu__icon_wicket
+            | Калитки
+        li.menu__item-container
+          a(href='#').menu__item
+            span.menu__icon.menu__icon_pillar
+            | Столбы
+        li.menu__item-container
+          a(href='#').menu__item
+            span.menu__icon.menu__icon_barrier
+            | Ограждения
+        li.menu__item-container.tablet-only.js-menu__nesting
+          a(href='#').menu__item Ещё...
+          ul.menu__list.menu__list_second-level.js-menu__nested
+            li.menu__item-container
+              a(href='#').menu__item Информация
+            li.menu__item-container
+              a(href='#').menu__item Контакты
+        li.menu__item-container.desktop-only
+          a(href='#').menu__item Информация
+        li.menu__item-container.desktop-only
+          a(href='#').menu__item Контакты

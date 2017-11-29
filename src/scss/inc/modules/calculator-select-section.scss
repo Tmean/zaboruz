@@ -1,0 +1,96 @@
+.calculator-select-section {
+  background-image: linear-gradient(to top, #ebf7ff, #f3faff);
+  padding: 31px 0 40px;
+
+  @include breakpoint-up(tablet) {
+    padding: 40px 0 49px;
+  }
+
+  &__items {
+    margin-top: 12px;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 15px;
+    }
+
+    @include breakpoint-only(desktop) {
+      margin-top: 17px;
+    }
+
+    &_additional {
+      overflow: hidden;
+      max-height: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    @include breakpoint-only(mobile) {
+      height: 100%;
+    }
+  }
+
+  &__item-container {
+    margin-top: 9px;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 25px;
+    }
+  }
+
+  &__show-all {
+    appearance: none;
+    display: block;
+    width: 100%;
+    padding: 10px 40px 12px;
+    border-radius: 100px;
+    background-image: linear-gradient(to bottom, #489de0, #2f88cf);
+    box-shadow: 0 1px 2px 0 rgba(47, 136, 207, 0.25);
+    border: none;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 26px;
+    position: relative;
+    cursor: pointer;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 25px;
+    }
+
+    &::before, &::after {
+      content: '';
+      @include icon(arrow-down, svg);
+      transform: translateY(-50%);
+      position: absolute;
+      top: 50%;
+
+      @include breakpoint-up(tablet) {
+        position: initial;
+        transform: translateY(-2px);
+        top: initial;
+        left: initial;
+        right: initial;
+      }
+    }
+
+    &::before {
+      left: 14px;
+
+      @include breakpoint-up(tablet) {
+        margin-right: 10px;
+      }
+    }
+
+    &::after {
+      right: 14px;
+      
+      @include breakpoint-up(tablet) {
+        margin-left: 10px;
+      }
+    }
+  }
+}

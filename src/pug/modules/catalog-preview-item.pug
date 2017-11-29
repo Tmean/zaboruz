@@ -1,0 +1,16 @@
+mixin catalog-preview-item({ image, image2x, title, price } = {})
+  .catalog-preview-item&attributes(attributes)
+    .catalog-preview-item__image-container
+      img.catalog-preview-item__image(src=image srcset=`${image2x} 2x` alt=title)
+    .catalog-preview-item__content
+      a.catalog-preview-item__title.link.link_container(href='#')
+        span.link__text= title
+      .catalog-preview-item__price от 
+        span.catalog-preview-item__price-value= price
+          | 
+          span.rub
+        span.catalog-preview-item__price-grey  за п. м.
+      .catalog-preview-item__link-container
+        +action-button({
+          href: '#',
+        }).catalog-preview-item__link Перейти в каталог

@@ -1,0 +1,55 @@
+mixin works({} = {})
+  section.works.section&attributes(attributes)
+    .container-fluid
+      +decorated-heading({
+        text: 'Наши работы',
+      }).works__heading
+        .works__controls-container
+          a(href='#').works__link-all.link.link_white.link_container
+            span.link__text Все работы
+          button.works__slider-arrow.works__slider-arrow_prev.mobile-hidden.js-works__slider-prev
+          button.works__slider-arrow.works__slider-arrow_next.mobile-hidden.js-works__slider-next
+      .works__slider-container.row
+        .works__slider.js-works__slider
+          a.works__slide(href='#').link.link_blue.link_container
+            img.works__slide-img(src='img/works-1.jpg' srcset='img/works-1@2x.jpg 2x' alt='Сварной металлический забор длина 20 м')
+            h3.works__slide-heading Сварной металлический забор длина 20 м
+            .works__slide-link-container
+              span.link__text Посмотреть полностью
+          a.works__slide(href='#').link.link_blue.link_container
+            img.works__slide-img(src='img/works-2.jpg' srcset='img/works-2@2x.jpg 2x' alt='Кованый металлический забор с колоннами 12 м')
+            h3.works__slide-heading Кованый металлический забор с колоннами 12 м
+            .works__slide-link-container
+              span.link__text Посмотреть полностью
+          a.works__slide(href='#').link.link_blue.link_container
+            img.works__slide-img(src='img/works-3.jpg' srcset='img/works-3@2x.jpg 2x' alt='Сварной металлический забор длина 27 м')
+            h3.works__slide-heading Сварной металлический забор длина 27 м
+            .works__slide-link-container
+              span.link__text Посмотреть полностью
+          a.works__slide(href='#').link.link_blue.link_container
+            img.works__slide-img(src='img/works-4.jpg' srcset='img/works-4@2x.jpg 2x' alt='Сварной металлический забор длина 17 м')
+            h3.works__slide-heading Сварной металлический забор длина 17 м
+            .works__slide-link-container
+              span.link__text Посмотреть полностью
+          a.works__slide(href='#').link.link_blue.link_container
+            img.works__slide-img(src='img/works-1.jpg' srcset='img/works-1@2x.jpg 2x' alt='Сварной металлический забор длина 20 м')
+            h3.works__slide-heading Сварной металлический забор длина 20 м
+            .works__slide-link-container
+              span.link__text Посмотреть полностью
+          a.works__slide(href='#').link.link_blue.link_container
+            img.works__slide-img(src='img/works-2.jpg' srcset='img/works-2@2x.jpg 2x' alt='Кованый металлический забор с колоннами 12 м')
+            h3.works__slide-heading Кованый металлический забор с колоннами 12 м
+            .works__slide-link-container
+              span.link__text Посмотреть полностью
+          a.works__slide(href='#').link.link_blue.link_container
+            img.works__slide-img(src='img/works-3.jpg' srcset='img/works-3@2x.jpg 2x' alt='Сварной металлический забор длина 27 м')
+            h3.works__slide-heading Сварной металлический забор длина 27 м
+            .works__slide-link-container
+              span.link__text Посмотреть полностью
+          a.works__slide(href='#').link.link_blue.link_container
+            img.works__slide-img(src='img/works-4.jpg' srcset='img/works-4@2x.jpg 2x' alt='Сварной металлический забор длина 17 м')
+            h3.works__slide-heading Сварной металлический забор длина 17 м
+            .works__slide-link-container
+              span.link__text Посмотреть полностью
+        button.works__slider-arrow.works__slider-arrow_prev.mobile-only.js-works__slider-prev
+        button.works__slider-arrow.works__slider-arrow_next.mobile-only.js-works__slider-next

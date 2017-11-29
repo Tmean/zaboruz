@@ -1,0 +1,18 @@
+mixin calculator-select({ items = [], isDisabled } = {})
+  .calculator-select.js-calculator-select(class=(isDisabled ? 'is-disabled' : false) value=items[0].value)&attributes(attributes)
+    .calculator-select__selected.js-calculator-select__target
+      span.calculator-select__icon(style=`background-image: url(${items[0].icon})`).js-calculator-select__target-icon
+      span.calculator-select__title.js-calculator-select__target-title= items[0].title
+      span.calculator-select__arrow.js-calculator-select__target-arrow
+    .calculator-select__list.js-calculator-select__list
+      for item, index in items
+        .calculator-select__item.js-calculator-select__item(data-select-value=item.value data-select-icon=item.icon class=(index === 0 ? 'is-selected' : false))
+          .calculator-select__item-image-container
+            img(src=item.image srcset=`${item.image2x} 2x` alt=item.text).calculator-select__item-image
+          .calculator-select__item-content
+            .calculator-select__item-title.js-calculator-select__item-title= item.title
+            if item.percent
+              .calculator-select__item-percent= item.percent
+            .calculator-select__item-text= item.text
+            if item.detailsLink
+              a(href=item.detailsLink).calculator-select__item-details.link Подробнее

@@ -1,0 +1,42 @@
+.call-form {
+  width: 250px;
+
+  &__input {
+    @include reset();
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #cbe8ff;
+    padding: 3px 5px;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #2f88cf;
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.is-error {
+      border-color: #FF4900;
+      color: #FF4900;
+    }
+  }
+
+  &__error {
+    font-size: 14px;
+    color: #FF4900;
+    margin-top: 3px;
+    padding-left: 3px;
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__submit-container {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,8 @@
+mixin additional-production-item({ image, image2x, title, description } = {})
+  .additional-production-item&attributes(attributes)
+    .additional-production-item__image-container
+      img(src=image srcset=`${image2x} 2x` alt=title).additional-production-item__image
+    a.additional-production-item__title.link.link_container(href='#')
+      span.link__text= title
+    if description
+      p.additional-production-item__description= description

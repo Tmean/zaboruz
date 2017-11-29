@@ -1,0 +1,112 @@
+$root: '.mobile-menu';
+
+#{$root} {
+  display: none;
+  background-color: rgba(72, 157, 224, 0.96);
+  position: absolute;
+  top: 45px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 40;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &:not(#{$root}__list_first-level) {
+      max-height: 0px;
+      overflow: hidden;
+    }
+
+    &_second-level {
+      #{$root}__item {
+        padding-left: 35px;
+        background-color: #2F88CF;
+        box-shadow: none;
+
+        &_nesting {
+          #{$root}__arrow {
+            border-left: none;
+          }
+        }
+      }
+    }
+
+    &_third-level {
+      #{$root}__item {
+        padding-left: 55px;
+        background-color: #1573BE;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    height: 45px;
+    padding: 12px 23px;
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.11);
+    position: relative;
+
+    &_nesting {
+      #{$root}__arrow {
+        display: inline-block;
+        height: 45px;
+        width: 61px;
+        background-position: center;
+        border-left: 1px solid rgba(255, 255, 255, 0.11);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        &::after {
+          content: '';
+          @include icon(menu-arrow, svg);
+          transform: translate(-50%, -50%) rotate(90deg);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+      }
+
+      &.is-active {
+        #{$root}__arrow {
+          &::after {
+            @include icon(menu-arrow_active, svg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__icon {
+    content: '';
+    margin-left: 9px;
+
+    &_fence {
+      @include icon(fence_white, svg);
+    }
+
+    &_gate {
+      @include icon(gates_white, svg);
+    }
+
+    &_pillar {
+      @include icon(pillar_white, svg);
+    }
+
+    &_wicket {
+      @include icon(wicket_white, svg);
+    }
+
+    &_barrier {
+      @include icon(barrier_white, svg);
+    }
+  }
+}

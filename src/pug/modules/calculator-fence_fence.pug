@@ -1,0 +1,688 @@
+mixin calculator-fence_fence({} = {})
+  section.calculator-fence.section
+    .container-fluid
+      h1.section__heading Вид фасада забора
+      .row
+        .col-12
+          .calculator-fence__scene-container
+            .calculator-fence__scene
+              img(src='img/calculator-fence-image-1.png' srcset='img/calculator-fence-image-1@2x.png 2x' alt='Вид забора').calculator-fence__scene-img.js-page-calculator__scene-image-brick
+              img(src='img/calculator-fence-image-2.png' srcset='img/calculator-fence-image-2@2x.png 2x' alt='Вид забора').calculator-fence__scene-img.is-hidden.js-page-calculator__scene-image-metal
+              .calculator-fence__scene-dimensions
+                .calculator-fence__scene-dimensions-image-container.js-page-calculator__scene-dimensions-brick
+                  img(src='img/calculator-fence-dimensions-1.png' srcset='img/calculator-fence-dimensions-1@2x.png 2x' alt='Размеры').calculator-fence__scene-dimensions-image
+                .calculator-fence__scene-dimensions-image-container.calculator-fence__scene-dimensions-image-container_metal.is-hidden.js-page-calculator__scene-dimensions-metal
+                  img(src='img/calculator-fence-dimensions-2.png' srcset='img/calculator-fence-dimensions-2@2x.png 2x' alt='Размеры').calculator-fence__scene-dimensions-image
+                span.calculator-fence__scene-dimensions-item.calculator-fence__scene-dimensions-item_orange.calculator-fence__scene-dimensions-item_small-width.js-page-calculator__dimensions-item 1.5 м
+                span.calculator-fence__scene-dimensions-item.calculator-fence__scene-dimensions-item_height.calculator-fence__scene-dimensions-item_background.js-page-calculator__dimensions-item.js-page-calculator__dimensions-height 1.65 м
+                span.calculator-fence__scene-dimensions-item.calculator-fence__scene-dimensions-item_width-1.js-page-calculator__dimensions-item.js-page-calculator__dimensions-width 2.5 м
+                span.calculator-fence__scene-dimensions-item.calculator-fence__scene-dimensions-item_width-2.js-page-calculator__dimensions-item.js-page-calculator__dimensions-width 2.5 м
+                span.calculator-fence__scene-dimensions-item.calculator-fence__scene-dimensions-item_width-3.js-page-calculator__dimensions-item.js-page-calculator__dimensions-width 2.5 м
+                span.calculator-fence__scene-dimensions-item.calculator-fence__scene-dimensions-item_orange.calculator-fence__scene-dimensions-item_gate.js-page-calculator__dimensions-item.js-page-calculator__dimensions-gate 3.5 м
+              .calculator-fence__scene-zooms
+                button.calculator-fence__scene-zoom.calculator-fence__scene-zoom_1.js-popup__link(data-popup='zoom-1')
+                button.calculator-fence__scene-zoom.calculator-fence__scene-zoom_2.js-popup__link(data-popup='zoom-2')
+                button.calculator-fence__scene-zoom.calculator-fence__scene-zoom_3.js-popup__link(data-popup='zoom-1')
+                button.calculator-fence__scene-zoom.calculator-fence__scene-zoom_4.js-popup__link(data-popup='zoom-1')
+                button.calculator-fence__scene-zoom.calculator-fence__scene-zoom_5.js-popup__link(data-popup='zoom-1')
+      .row.calculator-fence__form
+        .col-12.col-tablet-4
+          +calculator-fence-group({
+            heading: 'Забор',
+            icon: 'img/icons/fence.svg',
+            isActive: true,
+          }).calculator-fence__group
+            +calculator-range({
+              min: 0,
+              max: 180,
+              value: 84,
+              step: 3,
+              units: 'метров',
+              targetClass: 'js-page-calculator__sections-range-meters',
+            }).calculator-fence__range
+            +calculator-range({
+              min: 0,
+              max: 60,
+              value: 28,
+              step: 1,
+              units: 'секции',
+              targetClass: 'js-page-calculator__sections-range',
+            }).calculator-fence__range
+            .calculator-fence__label Высота забора
+            +calculator-radio-bar({
+              name: 'fence-height',
+              items: [
+                {
+                  value: 1.65,
+                  text: '1.65 м',
+                },
+                {
+                  value: 1.8,
+                  text: '1.8 м',
+                },
+                {
+                  value: 2,
+                  text: '2 м',
+                }
+              ],
+            }).calculator-fence__radio-bar
+            .calculator-fence__label Ширина забора
+            +calculator-radio-bar({
+              name: 'fence-width',
+              items: [
+                {
+                  value: 2.5,
+                  text: '2.5 м',
+                },
+                {
+                  value: 3,
+                  text: '3 м',
+                }
+              ],
+            }).calculator-fence__radio-bar
+            .calculator-fence__label Толщина профиля
+              +help-link({
+                popup: 'calculator-info',
+              })
+            +calculator-radio-bar({
+              items: [
+                {
+                  value: 'Лайт',
+                  text: 'Лайт',
+                },
+                {
+                  value: '15x15 мм',
+                  text: '15x15 мм',
+                },
+                {
+                  value: '20x20 мм',
+                  text: '20x20 мм',
+                }
+              ],
+            }).calculator-fence__radio-bar.js-page-calculator__fence-profile
+            .calculator-fence__label Фактура металла
+            +calculator-select({
+              items: [
+                {
+                  value: '1',
+                  title: 'Гладкий профиль',
+                  text: 'Сортовой прокат ведущих заводов России',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/metal-texture-icon.png',
+                  detailsLink: '#',
+                },
+                {
+                  value: '2',
+                  title: 'Прокованный профиль',
+                  percent: '+20%',
+                  text: '15-миллиметрвый профиль тоже часто используют, но не так часто',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/metal-texture-icon.png',
+                  detailsLink: '#',
+                },
+              ],
+            }).calculator-fence__select.js-page-calculator__fence-structure
+            .calculator-fence__label Краска
+            +calculator-select({
+              items: [
+                {
+                  value: '1',
+                  title: 'Без краски',
+                  text: 'Сортовой прокат ведущих заводов России',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/paint-icon.png',
+                  detailsLink: '#',
+                },
+                {
+                  value: '2',
+                  title: 'Квил (Россия)',
+                  percent: '+20%',
+                  text: '15-миллиметрвый профиль тоже часто используют, но не так часто',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/paint-icon.png',
+                  detailsLink: '#',
+                },
+              ],
+            }).calculator-fence__select.js-page-calculator__fence-paint
+            .calculator-fence__label Цвет
+            +calculator-select({
+              items: [
+                {
+                  value: '1',
+                  title: '9005 Чёрный янтарь',
+                  text: 'Сортовой прокат ведущих заводов России',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/color-icon.png',
+                  detailsLink: '#',
+                },
+                {
+                  value: '2',
+                  title: '1030 Красный',
+                  percent: '+20%',
+                  text: '15-миллиметрвый профиль тоже часто используют, но не так часто',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/color-icon_red.png',
+                  detailsLink: '#',
+                },
+                {
+                  value: '3',
+                  title: '8800 Зелёный',
+                  percent: '+5%',
+                  text: 'Сортовой прокат ведущих заводов России',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/color-icon_green.png',
+                  detailsLink: '#',
+                },
+              ],
+            }).calculator-fence__select.js-page-calculator__fence-color
+            .calculator-fence__label Пика
+            +calculator-select({
+              items: [
+                {
+                  value: '1',
+                  title: 'Литая пика p1501',
+                  text: '15-миллиметрвый профиль тоже часто используют, но не так часто',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/peak-icon.png',
+                  detailsLink: '#',
+                },
+                {
+                  value: '2',
+                  title: 'Ещё одна пика',
+                  percent: '+20%',
+                  text: 'Сортовой прокат ведущих заводов России',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/peak-icon.png',
+                  detailsLink: '#',
+                },
+              ],
+            }).calculator-fence__select.js-page-calculator__fence-peak
+        .col-12.col-tablet-4
+          +calculator-fence-group({
+            heading: 'Ворота',
+            icon: 'img/icons/gates.svg',
+          }).calculator-fence__group
+            +calculator-radio-bar({
+              items: [
+                {
+                  value: 0,
+                  text: 'Нет',
+                },
+                {
+                  value: 1,
+                  text: '1',
+                },
+                {
+                  value: 2,
+                  text: '2',
+                },
+                {
+                  value: 3,
+                  text: '3',
+                }
+              ],
+            }).calculator-fence__radio-bar.js-page-calculator__gate-control
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-1 Ширина ворот
+            +calculator-radio-bar({
+              name: 'gate-width',
+              isDisabled: true,
+              items: [
+                {
+                  value: 3.5,
+                  text: '3.5 м',
+                },
+                {
+                  value: 4,
+                  text: '4 м',
+                }
+              ],
+            }).calculator-fence__radio-bar.js-page-calculator__controls-group-1
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-1 Тип открывания
+            +calculator-radio-bar({
+              isDisabled: true,
+              items: [
+                {
+                  value: 0,
+                  text: 'Распашные',
+                },
+                {
+                  value: 1,
+                  text: 'Откатные',
+                }
+              ],
+            }).calculator-fence__radio-bar.js-page-calculator__controls-group-1.js-page-calculator__gate-opening
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-1 Электропривод
+              +help-link({
+                popup: 'calculator-info',
+              })
+            +calculator-radio({
+              isDisabled: true,
+              items: [
+                {
+                  value: 1,
+                  title: 'Без автоматики',
+                },
+                {
+                  value: 2,
+                  title: 'Автоматика Doorhane (РФ)',
+                },
+                {
+                  value: 3,
+                  title: 'Автоматика Came (Италия)',
+                },
+              ],
+            }).calculator-fence__radio.js-page-calculator__controls-group-1
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-1 Ворота открываются
+            +calculator-opening-radio({
+              isDisabled: true,
+              items: [
+                {
+                  value: 1,
+                  image: 'img/gate-opening-1.svg',
+                  imageActive: 'img/gate-opening-1_active.svg',
+                  imageDisabled: 'img/gate-opening-1_disabled.svg',
+                },
+                {
+                  value: 2,
+                  image: 'img/gate-opening-2.svg',
+                  imageActive: 'img/gate-opening-2_active.svg',
+                  imageDisabled: 'img/gate-opening-2_disabled.svg',
+                },
+              ],
+            }).calculator-fence__opening-radio.js-page-calculator__controls-group-1.js-page-calculator__gate-opening-1
+            +calculator-opening-radio({
+              isDisabled: true,
+              items: [
+                {
+                  value: 1,
+                  image: 'img/gate-opening-3.svg',
+                  imageActive: 'img/gate-opening-3_active.svg',
+                  imageDisabled: 'img/gate-opening-3_disabled.svg',
+                },
+                {
+                  value: 2,
+                  image: 'img/gate-opening-4.svg',
+                  imageActive: 'img/gate-opening-4_active.svg',
+                  imageDisabled: 'img/gate-opening-4_disabled.svg',
+                },
+              ],
+            }).calculator-fence__opening-radio.is-hidden.js-page-calculator__controls-group-1.js-page-calculator__gate-opening-2
+          +calculator-fence-group({
+            heading: 'Калитки',
+            icon: 'img/icons/wicket.svg',
+          }).calculator-fence__group
+            +calculator-radio-bar({
+              items: [
+                {
+                  value: 0,
+                  text: 'Нет',
+                },
+                {
+                  value: 1,
+                  text: '1',
+                },
+                {
+                  value: 2,
+                  text: '2',
+                },
+                {
+                  value: 3,
+                  text: '3',
+                }
+              ],
+            }).calculator-fence__radio-bar.js-page-calculator__wicket-control
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-2 Калитка открывается
+            +calculator-opening-radio({
+              isDisabled: true,
+              items: [
+                {
+                  value: 1,
+                  image: 'img/wicket-opening-1.svg',
+                  imageActive: 'img/wicket-opening-1_active.svg',
+                  imageDisabled: 'img/wicket-opening-1_disabled.svg',
+                },
+                {
+                  value: 2,
+                  image: 'img/wicket-opening-2.svg',
+                  imageActive: 'img/wicket-opening-2_active.svg',
+                  imageDisabled: 'img/wicket-opening-2_disabled.svg',
+                },
+                {
+                  value: 3,
+                  image: 'img/wicket-opening-3.svg',
+                  imageActive: 'img/wicket-opening-3_active.svg',
+                  imageDisabled: 'img/wicket-opening-3_disabled.svg',
+                },
+                {
+                  value: 4,
+                  image: 'img/wicket-opening-4.svg',
+                  imageActive: 'img/wicket-opening-4_active.svg',
+                  imageDisabled: 'img/wicket-opening-4_disabled.svg',
+                },
+              ],
+            }).calculator-fence__opening-radio.js-page-calculator__controls-group-2.js-page-calculator__wicket-opening
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-2 Замок калитки
+            +calculator-radio({
+              isDisabled: true,
+              items: [
+                {
+                  value: 0,
+                  title: 'Нет',
+                },
+                {
+                  value: 1,
+                  title: 'Механический врезной',
+                },
+                {
+                  value: 2,
+                  title: 'Подготовка под электромеханический',
+                },
+              ],
+            }).calculator-fence__radio.js-page-calculator__controls-group-2.js-page-calculator__wicket-lock
+        .col-12.col-tablet-4
+          +calculator-fence-group({
+            heading: 'Столбы',
+            icon: 'img/icons/pillar.svg',
+          }).calculator-fence__group
+            +calculator-radio-bar({
+              items: [
+                {
+                  value: 0,
+                  text: 'Нет',
+                },
+                {
+                  value: 1,
+                  text: 'Металл',
+                },
+                {
+                  value: 2,
+                  text: 'Кирпич',
+                },
+              ],
+            }).calculator-fence__radio-bar.js-page-calculator__pillar-control
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-3 Размеры
+            +calculator-radio-bar({
+              isDisabled: true,
+              items: [
+                {
+                  value: '80',
+                  text: '80x80 мм',
+                },
+                {
+                  value: '100',
+                  text: '100x100 мм',
+                },
+              ],
+            }).calculator-fence__radio-bar.js-page-calculator__controls-group-3.js-page-calculator__pillar-size
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-3 Толщина стенки
+            +calculator-radio-bar({
+              isDisabled: true,
+              items: [
+                {
+                  value: '2',
+                  text: '2 мм',
+                },
+                {
+                  value: '3',
+                  text: '3 мм',
+                },
+              ],
+            }).calculator-fence__radio-bar.js-page-calculator__controls-group-3
+            .calculator-fence__label.is-disabled.js-page-calculator__controls-group-3 Заглушка
+            +calculator-select({
+              isDisabled: true,
+              items: [
+                {
+                  value: '1',
+                  title: 'Пластиковая',
+                  text: 'Сортовой прокат ведущих заводов России',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/placeholder-icon.png',
+                  detailsLink: '#',
+                },
+                {
+                  value: '2',
+                  title: 'Металлическая',
+                  percent: '+20%',
+                  text: 'Сортовой прокат ведущих заводов России',
+                  image: 'img/metal-texture.png',
+                  image2x: 'img/metal-texture@2x.png',
+                  icon: 'img/placeholder-icon.png',
+                  detailsLink: '#',
+                },
+              ],
+            }).calculator-fence__select.js-page-calculator__controls-group-3
+          .calculator-fence__group-divider
+          +calculator-fence-group({
+            isDisabled: true,
+            heading: 'Установка',
+          }).calculator-fence__group.js-page-calculator__controls-group-3
+            +calculator-radio({
+              isDisabled: true,
+              items: [
+                {
+                  value: 0,
+                  title: 'Без установка',
+                },
+                {
+                  value: 'бутирование',
+                  title: 'Бутирование столбов',
+                },
+                {
+                  value: 'бетонирование',
+                  title: 'Бетонирование столбов на 1 м в глубину',
+                },
+                {
+                  value: 'бетонирование',
+                  title: 'Бетонирование столбов на 1.5 м в глубину',
+                },
+                {
+                  value: 'ленточный фундамент',
+                  title: 'Ленточный фундамент 25×40',
+                },
+                {
+                  value: 'ленточный фундамент',
+                  title: 'Ленточный фундамент 40×50',
+                },
+                {
+                  value: 'ленточный фундамент',
+                  title: 'Ленточный фундамент 40×60',
+                },
+              ],
+            }).calculator-fence__radio.js-page-calculator__controls-group-3.js-page-calculator__installation
+          .calculator-fence__group-divider
+          +calculator-fence-group({
+            heading: 'Доставка',
+            isActive: true,
+          }).calculator-fence__group
+            +calculator-radio({
+              items: [
+                {
+                  value: 1,
+                  title: 'Без доставки',
+                },
+                {
+                  value: 2,
+                  title: 'По москве',
+                },
+                {
+                  value: 3,
+                  title: 'Доставка за МКАД',
+                  content: `
+<div class='calculator-fence__shipping'>
+<input type='text' pattern='[0-9]*' value='1' class='calculator-fence__shipping-input'><span class='calculator-fence__shipping-label'>км от МКАД</span>
+</div>
+                  `,
+                },
+              ],
+            }).calculator-fence__radio
+    .calculator-fence__pre-total
+      .container-fluid
+        .row
+          .col-12.col-tablet-4
+            .calculator-fence__pre-total-item
+              .calculator-fence__pre-total-item-heading Забор
+              .calculator-fence__pre-total-item-content
+                span.js-page-calculator__price-fence 24 500
+                span.rub 
+                | 
+                span.calculator-fence__pre-total-item-additional (3 500
+                  span.rub 
+                  |  за п. м.)
+          .col-12.col-tablet-4
+            .calculator-fence__pre-total-item
+              .calculator-fence__pre-total-item-heading Ворота и калитки
+              .calculator-fence__pre-total-item-content 
+                span.js-page-calculator__price-gate-wicket 75 500
+                span.rub 
+          .col-12.col-tablet-4
+            .calculator-fence__pre-total-item
+              .calculator-fence__pre-total-item-heading Столбы и установка
+              .calculator-fence__pre-total-item-content 
+                span.js-page-calculator__price-pillar-installation 97 500
+                span.rub 
+                | 
+                span.calculator-fence__pre-total-item-additional (
+                  span.js-page-calculator__price-pillar 32 500
+                  span.rub 
+                  |  + 
+                  span.js-page-calculator__price-installation 165 000
+                  span.rub 
+                  | )
+    .calculator-fence__total
+      .container-fluid
+        .calculator-fence__total-container
+          .calculator-fence__total-content Итог 
+            span.calculator-fence__total-content-price 
+              span.js-page-calculator__price-total 542 000
+              span.rub 
+          .calculator-fence__total-button
+            +call-to-action.js-popup__link(data-popup='order') Оформить заказ
+    .calculator-fence__estimate
+      .container-fluid
+        .calculator-fence__estimate-heading Смета
+        .calculator-fence__estimate-links
+          a(href='#').calculator-fence__estimate-link.calculator-fence__estimate-link_print.link.link_container
+            .link__text Распечатать
+          a(href='#').calculator-fence__estimate-link.calculator-fence__estimate-link_mail.link.link_container
+            .link__text Отправить на почту
+        .row
+          .col-12.col-desktop-8.col-desktop-offset-2.mobile-hidden
+            table.calculator-fence__estimate-table.js-page-calculator__estimate
+              thead.calculator-fence__estimate-table-head
+                tr
+                  th Наименование
+                  th Кол-во
+                  th Ед.
+                  th Цена,
+                    span.rub 
+                  th Сумма,
+                    span.rub 
+              tbody.calculator-fence__estimate-table-body.js-page-calculator__table-body
+                tr
+                  td Секции — профиль 15мм, пики 1, цвет 9005 чёрный янтарь, краска квил (Россия), фактура гладкий профиль
+                    | 
+                    a(href='').calculator-fence__estimate-table-blueprint.link Смотреть чертёж
+                  td.js-page-calculator__table-fence-amount 47
+                  td шт.
+                  td 7 150
+                  td 336 050
+                tr
+                  td Ворота — распашные, с механическим приводом, открывание во двор, 3 м
+                    | 
+                    a(href='').calculator-fence__estimate-table-blueprint.link Смотреть чертёж
+                  td 1
+                  td шт.
+                  td 18 100
+                  td 18 100
+                tr
+                  td Калитка — открывание вправа на улицу, замок, задвижка под навесной замок
+                    | 
+                    a(href='').calculator-fence__estimate-table-blueprint.link Смотреть чертёж
+                  td 1
+                  td шт.
+                  td 7 100
+                  td 7 100
+                tr
+                  td Металлический столбы 80 мм
+                    | 
+                    a(href='').calculator-fence__estimate-table-blueprint.link Смотреть чертёж
+                  td 50
+                  td шт.
+                  td 1 000
+                  td 50 000
+                tr
+                  td Заглушка для столбов
+                    | 
+                    a(href='').calculator-fence__estimate-table-blueprint.link Смотреть чертёж
+                  td 50
+                  td шт.
+                  td 150
+                  td 50 000
+                tr
+                  td(colspan=4) Итог за материалы
+                  td 418 750
+              tbody.calculator-fence__estimate-table-body.calculator-fence__estimate-table-body_with-heading.js-page-calculator__table-installation-body
+                tr.calculator-fence__estimate-table-body.calculator-fence__estimate-table-body-heading
+                  td(colspan=5) Монтаж
+                tr 
+                  td Монтаж столбов 80мм (бетонирование)
+                  td 50
+                  td шт.
+                  td 1 000
+                  td 50 000
+                tr 
+                  td Монтаж секции
+                  td 47
+                  td шт.
+                  td 1 000
+                  td 47 000
+                tr 
+                  td Монтаж калитки
+                  td 1
+                  td шт.
+                  td 3 000
+                  td 3 000
+                tr 
+                  td Монтаж ворот
+                  td 1
+                  td шт.
+                  td 5 000
+                  td 5 000
+                tr 
+                  td(colspan=4) Выезд бригады
+                  td 3 000
+                tr
+                  td(colspan=4) Итого за работу
+                  td 108 000
+              tfoot.calculator-fence__estimate-table-footer
+                tr
+                  th(colspan=4) Итого
+                  th
+                    span.js-page-calculator__price-total 526 750
+        .calculator-fence__mobile-table-button-container
+          +mobile-table-button({
+            heading: 'Смета',
+            target: '.js-page-calculator__estimate',
+          })
+        .calculator-fence__estimate-popup-links
+          a(href='#').calculator-fence__estimate-popup-link.calculator-fence__estimate-popup-link_pay.js-popup__link(data-popup='text')
+            .calculator-fence__estimate-popup-link-text Как оплатить
+          a(href='#').calculator-fence__estimate-popup-link.calculator-fence__estimate-popup-link_shipping.js-popup__link(data-popup='text')
+            .calculator-fence__estimate-popup-link-text Доставка
+          a(href='#').calculator-fence__estimate-popup-link.calculator-fence__estimate-popup-link_location.js-popup__link(data-popup='text')
+            .calculator-fence__estimate-popup-link-text Где купить
+          a(href='#').calculator-fence__estimate-popup-link.calculator-fence__estimate-popup-link_certificate.js-popup__link(data-popup='text')
+            .calculator-fence__estimate-popup-link-text Сертификат
+        .calculator-fence__estimate-button
+          +call-to-action.js-popup__link(data-popup='order') Оформить заказ

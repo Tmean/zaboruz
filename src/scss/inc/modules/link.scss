@@ -1,0 +1,56 @@
+$root: '.link';
+
+@mixin link($color, $hoverColor, $underlineColor) {
+  &:not(#{$root}_container) {
+    color: $color;
+    background-size: 1px 2px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(transparent 50%, rgba($underlineColor, 0) 50.1%, rgba($underlineColor, 0) 100%);
+    
+    &:hover {
+      color: $hoverColor;
+      text-decoration: none;
+      cursor: pointer;
+      background-image: linear-gradient(transparent 50%, rgba($underlineColor, 1) 50.1%, rgba($underlineColor, 1) 100%);
+    }
+  }
+
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  #{$root}__text {
+    color: $color;
+    display: inline;
+    background-size: 1px 2px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(transparent 50%, rgba($underlineColor, 0) 50.1%, rgba($underlineColor, 0) 100%);
+  }
+
+  &:hover {
+    #{$root}__text {
+      display: inline;
+      color: $hoverColor;
+      text-decoration: none;
+      background-image: linear-gradient(transparent 50%, rgba($underlineColor, 1) 50.1%, rgba($underlineColor, 1) 100%);
+    }
+  }
+}
+
+.link {
+  @include link(#2f88cf, rgb(39, 105, 155), #3e9ce4);
+
+  &_white {
+    @include link(#ffffff, rgba(255, 255, 255, 0.8), #ffffff);
+  }
+
+  &_blue {
+    @include link(#a9d9ff, #c0e1fa, #a9d9ff);
+  }
+}

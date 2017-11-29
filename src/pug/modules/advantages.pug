@@ -1,0 +1,91 @@
+mixin advantages({} = {})
+  section.advantages.section
+    .container-fluid
+      +decorated-heading({
+        text: 'Наши преимущества',
+      }).advantages__heading
+      .row.mobile-only
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-0
+          +advantages-item({
+            image: 'img/advantages-icon-1.svg',
+            text: 'Блестящая репутация компании и опыт работы с 2010 года',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-1
+          +advantages-item({
+            image: 'img/advantages-icon-2.svg',
+            text: 'Вся продукция уже готова и ждет своих клиентов на складе',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-0
+          +advantages-item({
+            image: 'img/advantages-icon-3.svg',
+            text: 'Лучшая на рынке цена-качество и гибкое ценовое образование ',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-1
+          +advantages-item({
+            image: 'img/advantages-icon-4.svg',
+            text: 'Собственное производство на современном оборудовании, покраска электростатическим методом ',
+            video: '#',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-0
+          +advantages-item({
+            image: 'img/advantages-icon-5.svg',
+            text: 'Доставка по Москве и области на личном транспорте и также в любой регион транспортной компанией',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-1
+          +advantages-item({
+            image: 'img/advantages-icon-6.svg',
+            text: 'Всё сертифицировано, используемые материалы соответстуют ГОСТу',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-0
+          +advantages-item({
+            image: 'img/advantages-icon-7.svg',
+            text: 'Гарантия на все материалы и работы от 1 до 5 лет',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-1
+          +advantages-item({
+            image: 'img/advantages-icon-8.svg',
+            text: 'Профессиональные установщики россияне и славяне',
+          }).advantages__item
+
+      .advantages__items.row.mobile-hidden
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-0
+          +advantages-item({
+            image: 'img/advantages-icon-1.svg',
+            text: 'Блестящая репутация компании и опыт работы с 2010 года',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-1
+          +advantages-item({
+            image: 'img/advantages-icon-5.svg',
+            text: 'Доставка по Москве и области на личном транспорте и также в любой регион транспортной компанией',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-0
+          +advantages-item({
+            image: 'img/advantages-icon-2.svg',
+            text: 'Вся продукция уже готова и ждет своих клиентов на складе',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-1
+          +advantages-item({
+            image: 'img/advantages-icon-6.svg',
+            text: 'Всё сертифицировано, используемые материалы соответстуют ГОСТу',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-0
+          +advantages-item({
+            image: 'img/advantages-icon-3.svg',
+            text: 'Лучшая на рынке цена-качество и гибкое ценовое образование ',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-1
+          +advantages-item({
+            image: 'img/advantages-icon-7.svg',
+            text: 'Гарантия на все материалы и работы от 1 до 5 лет',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-0
+          +advantages-item({
+            image: 'img/advantages-icon-4.svg',
+            text: 'Собственное производство на современном оборудовании, покраска электростатическим методом ',
+            video: '#',
+          }).advantages__item
+        .col-12.col-tablet-8.col-desktop-5.col-tablet-offset-2.col-desktop-offset-1
+          +advantages-item({
+            image: 'img/advantages-icon-8.svg',
+            text: 'Профессиональные установщики россияне и славяне',
+          }).advantages__item

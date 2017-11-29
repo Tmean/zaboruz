@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_advant-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#489DE0" offset="0%"></stop>
+            <stop stop-color="#2F88CF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.37611607%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F1BF00" offset="0%"></stop>
+            <stop stop-color="#DF8B00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-46.3145676%" x2="50%" y2="576.383128%" id="linearGradient-3">
+            <stop stop-color="#489DE0" offset="0%"></stop>
+            <stop stop-color="#2F88CF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_advant-4">
+            <path d="M26.253114,60.7836659 C29.4684522,60.9339203 32.4674561,58.8378207 33.3346949,55.6012414 L38.5868317,36 L57,36 L57,32 L75,32 C78.3137085,32 81,29.3137085 81,26 C81,22.6862915 78.3137085,20 75,20 L57,20 L57,16 L20,16 C14.4771525,16 10,20.4771525 10,26 C10,31.5228475 14.4771525,36 20,36 L24.0929652,36 L19.8117333,51.9777748 C18.9452389,55.2115761 20.4910007,58.5234414 23.3459896,60.0028679 C21.7400517,68.7723124 27.6160396,75.5647866 38.4790904,72.8385965 C47.999985,70.4492339 52.5181417,72.9929377 54.2595558,79.4959256 L57.1574509,78.7199076 C54.9855702,70.6094223 48.8349674,67.1466579 37.7488551,69.9288274 C29.325162,72.0428365 25.1377022,67.4379082 26.253114,60.7836659 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            <path d="M45,23 C43.3431458,23 42,24.3431458 42,26 C42,27.6568542 43.3431458,29 45,29 L75,29 C76.6568542,29 78,27.6568542 78,26 C78,24.3431458 76.6568542,23 75,23 L45,23 Z" id="Path" fill="#FFFFFF"></path>
+            <path d="M54,33 L54,19 L20,19 C16.1340068,19 13,22.1340068 13,26 C13,29.8659932 16.1340068,33 20,33 L54,33 Z" id="Path" fill="#FFFFFF"></path>
+            <rect id="Rectangle" fill="url(#linearGradient-2)" x="25" y="21" width="3" height="10"></rect>
+            <rect id="Rectangle-2" fill="url(#linearGradient-3)" x="54" y="21" width="3" height="10"></rect>
+            <rect id="Rectangle" fill="url(#linearGradient-2)" x="32" y="21" width="3" height="10"></rect>
+            <rect id="Rectangle" fill="url(#linearGradient-2)" x="39" y="21" width="3" height="10"></rect>
+            <path d="" id="Path-2" stroke="#979797"></path>
+            <path d="" id="Path-3" stroke="#979797"></path>
+        </g>
+    </g>
+</svg>

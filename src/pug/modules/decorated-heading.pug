@@ -1,0 +1,9 @@
+mixin decorated-heading({ text = '', tag = 'h1' } = {})
+  .decorated-heading&attributes(attributes)
+    .decorated-heading__section
+      span.decorated-heading__line
+    .decorated-heading__section
+      #{tag}.decorated-heading__text= text
+    .decorated-heading__section
+      span.decorated-heading__line
+      block

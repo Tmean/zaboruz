@@ -1,0 +1,49 @@
+.additional-production-item {
+  padding: 0 10px;
+
+  &__image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../img/additional-production-item__background.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 134px;
+    min-height: 134px;
+
+    @include breakpoint-only(desktop) {
+      min-width: 218px;
+      min-height: 218px;
+    }
+  }
+
+  &__image {
+    width: 173px;
+
+    @include breakpoint-only(desktop) {
+      width: 265px;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    text-align: center;
+    color: #2f88cf;
+    margin-top: 12px;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 26px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 7px;
+  }
+}

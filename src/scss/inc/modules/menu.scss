@@ -1,0 +1,170 @@
+$root: '.menu';
+
+#{$root} {
+  height: 45px;
+  background-image: linear-gradient(to bottom, #489de0, #2f88cf);
+
+  &__container {
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+    z-index: 10;
+
+    &:not(#{$root}__list_first-level) {
+      display: none;
+
+      &.is-active {
+        display: flex;
+      }
+    }
+
+    &_first-level {
+      > #{$root}__item-container {
+        border-left: 1px solid #2f88cf;
+        border-bottom: 1px solid #3284C6;
+
+        > #{$root}__item {
+          justify-content: center;
+        }
+
+        &:hover {
+          > #{$root}__item {
+            background-color: #1573BE;
+          }
+        }
+        
+        &:last-child {
+          border-right: 1px solid #2f88cf;
+        }
+      }
+    }
+
+    &_second-level {
+      position: absolute;
+      top: calc(100% + 1px);
+      left: 0;
+      height: auto;
+      flex-direction: column;
+
+      > #{$root}__item-container {
+        &:hover {
+          > #{$root}__item {
+            background-color: #2f88cf;
+
+            &_nesting {  
+              &::after {
+                content: '';
+                @include icon(menu-arrow_active, svg);
+                width: 61px;
+                height: 45px;
+                background-position: center;
+              }
+            }
+          }
+        }
+
+        > #{$root}__item {
+          background-color: #489DE0;
+          border-bottom: 1px solid #7FBAE9;
+          padding: 12px 40px 12px 20px;
+
+          &_nesting {
+            padding-right: 101px;
+
+            &::after {
+              content: '';
+              @include icon(menu-arrow, svg);
+              width: 61px;
+              height: 45px;
+              background-position: center;
+              border-left: 1px solid #7FBAE9;
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &_third-level {
+      position: absolute;
+      top: 0%;
+      left: 100%;
+      height: auto;
+      flex-direction: column;
+
+      > #{$root}__item-container {
+        &:hover {
+          > #{$root}__item {
+            background-color: #2f88cf;
+          }
+        }
+
+        > #{$root}__item {
+          background-color: #489DE0;
+          border-bottom: 1px solid #7FBAE9;
+          padding: 12px 40px 12px 20px;
+        }
+      }
+    }
+  }
+
+  &__item-container {
+    display: flex;
+    height: 45px;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex-grow: 1;
+  }
+
+  &__item {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.17);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  &__icon {
+    content: '';
+    margin-right: 5px;
+
+    &_fence {
+      @include icon(fence_white, svg);
+    }
+
+    &_gate {
+      @include icon(gates_white, svg);
+    }
+
+    &_pillar {
+      @include icon(pillar_white, svg);
+    }
+
+    &_wicket {
+      @include icon(wicket_white, svg);
+    }
+
+    &_barrier {
+      @include icon(barrier_white, svg);
+    }
+  }
+}

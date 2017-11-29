@@ -1,0 +1,28 @@
+.help-link {
+  @include icon(help-link, svg);
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+  margin-bottom: -4px;
+
+  &:hover {
+    @include icon(help-link_hover, svg);
+  }
+
+  &.is-active {
+    @include icon(help-link_active, svg);
+  }
+
+  &_small {
+    @include icon(help-link_small, svg);
+    margin: 0 2px;
+
+    &:hover {
+      @include icon(help-link_small_hover, svg);
+    }
+
+    &.is-active {
+      @include icon(help-link_small_active, svg);
+    }
+  }
+}

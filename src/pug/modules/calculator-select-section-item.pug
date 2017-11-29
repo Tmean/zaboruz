@@ -1,0 +1,18 @@
+mixin calculator-select-section-item({ title, price, sale = false, image, image2x, isPopular = false, inStock = false, type = false } = {})
+  - isPopularClass = isPopular ? 'calculator-select-section-item_is-popular' : false
+  - inStockClass = inStock ? 'calculator-select-section-item_in-stock' : false
+  - saleClass = sale ? 'calculator-select-section-item__price_sale' : false
+  - typeClass = type ? `calculator-select-section-item_${type}` : false
+  .calculator-select-section-item.js-calculator-select-section-item(class=[isPopularClass, inStockClass, typeClass])&attributes(attributes)
+    .calculator-select-section-item__image-container
+      img(src=image srcset=`${image2x} 2x` alt=title).calculator-select-section-item__image
+    .calculator-select-section-item__info
+      .calculator-select-section-item__title= title
+      .calculator-select-section-item__price(class=saleClass) от #{price} 
+        span.rub
+      .calculator-select-section-item__units за п. м.
+    if sale
+      .calculator-select-section-item__sale от #{sale} 
+        span.rub
+    .calculator-select-section-item__button-container
+      +action-button.calculator-select-section-item__button.js-calculator-select-section-item__button Выбрать

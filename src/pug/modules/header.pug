@@ -1,0 +1,44 @@
+mixin header({} = {})
+  header.header
+    .header__container.container-fluid
+      .header__container-section
+        +logo({
+          colored: true,
+          size: 'big',
+        }).header__logo
+        .header__logo-text Сварные и кованные 
+          br
+          | металлические заборы
+      .header__container-section.header__container-section_info-blocks
+        .header__info-block.header__info-block_location Москва, Рязанский пр-т, 81/1, стр. 3, офис 308
+        .header__info-block.header__info-block_email
+          a(href='mailto:info@zaboruz.ru').header__info-block-link.link info@zaboruz.ru
+      .header__container-section
+        .header__phones
+          a(href='tel:84955803036').header__phone.link.link_container
+            span.link__text 8 495 580 30 36
+          a(href='tel:88005552470').header__phone.link.link_container
+            span.link__text 8 800 555 24 70
+          .header__schedule ПН–ПТ 
+            span ∙
+            |  &nbsp;9:00–18:00
+        .header__buttons
+          button.header__button.js-popup__link(data-popup='call') Перезвоните мне!
+          a(href='calculator-fence.html').header__button
+            span.header__calculator-button-text Калькулятор
+    .header__mobile-version
+      .header__mobile-version-container.container-fluid
+        .header__mobile-part.header__mobile-part_left
+          +header-button({
+            type: 'menu',
+          }).header__button_left.js-mobile-menu__button
+          +logo
+        .header__mobile-part.header__mobile-part_right
+          +header-button({
+            type: 'calculator',
+            href: 'calculator-fence.html',
+          })
+          +header-button({
+            type: 'phone',
+          }).header__button_right.js-mobile-phones__button
+    +menu.header__menu

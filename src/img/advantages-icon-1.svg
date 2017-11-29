@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_advant-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#489DE0" offset="0%"></stop>
+            <stop stop-color="#2F88CF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.37611607%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F1BF00" offset="0%"></stop>
+            <stop stop-color="#DF8B00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_advant-1">
+            <polygon id="Rectangle-22" fill="#FFFFFF" points="43.1826837 21 47.1427152 21 58.3122321 66.3985687 45.8382779 82 32.9125517 65.9275332"></polygon>
+            <polygon id="Rectangle-21" fill="#FFFFFF" points="36.0729361 8 54.1383 8 47.06915 20 43.7907037 20"></polygon>
+            <path d="M48.8154889,19.9123778 L59.4966137,66.6028084 L45.4407485,85.6211624 L31.3828797,66.6016264 L42.159895,19.8500395 L35.0107597,9 L35,9 L35,6 L56,6 L56,8.99351086 L56.0101063,9.00151223 L48.8154889,19.9123778 Z M45.8605847,19.0985 L52.63245,9 L38.4796655,9 L45.1658485,19.0985 L45.8605847,19.0985 Z M51.8540641,47 L46.0363486,22.0338314 L45,22.0338314 L34.6165203,65.9293736 L45.4406515,80.5738376 L56.2647863,65.9281916 L52.553136,50 L45,50 L45,47 L51.8540641,47 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+            <rect id="Rectangle-27" fill="url(#linearGradient-2)" x="44" y="47" width="15" height="3" rx="1.5"></rect>
+        </g>
+    </g>
+</svg>

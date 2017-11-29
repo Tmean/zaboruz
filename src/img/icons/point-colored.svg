@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_location-grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.37611607%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F1BF00" offset="0%"></stop>
+            <stop stop-color="#DF8B00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_location-grey" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M5.49977066,0 C2.46734402,0 0,2.47738251 0,5.52245374 C0,6.31672671 0.161910851,7.07507778 0.480992953,7.77662928 C1.85608851,10.7979061 4.49252922,13.9877395 5.26798894,14.8933089 C5.32608726,14.9610079 5.4107885,15 5.49992355,15 C5.58905861,15 5.67375985,14.9610079 5.73185817,14.8933089 C6.50701211,13.987893 9.14345282,10.7982131 10.519007,7.77662928 C10.838242,7.07507778 11,6.31672671 11,5.52245374 C10.9996942,2.47738251 8.5323502,0 5.49977066,0 Z M5.49977066,8.39083224 C3.92454168,8.39083224 2.64286211,7.1039381 2.64286211,5.52230023 C2.64286211,3.94050884 3.92454168,2.6536147 5.49977066,2.6536147 C7.07499965,2.6536147 8.35667922,3.94050884 8.35667922,5.52230023 C8.35683211,7.1039381 7.07515254,8.39083224 5.49977066,8.39083224 Z"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_telephone-grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.37611607%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F1BF00" offset="0%"></stop>
+            <stop stop-color="#DF8B00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_telephone-grey" fill="url(#linearGradient-1)">
+            <path d="M4.71073695,6.10879488 C2.99260574,7.83732849 7.20983689,12.0801235 8.92796811,10.2729895 L10.255615,8.93730441 C10.6460993,8.54445587 11.1927774,8.54445587 11.5832618,8.93730441 L14.7071367,12.0801235 C15.0976211,12.4729413 15.0976211,13.0229293 14.7071367,13.4157778 L13.6918774,14.3586143 C12.051843,16.0086089 7.83461188,14.3586143 4.24215571,10.7444077 C0.571602668,7.1302011 -0.990334796,2.88743681 0.649699542,1.23747292 L1.58686202,0.294636409 C1.97734639,-0.0982121364 2.5240245,-0.0982121364 2.91450887,0.294636409 L6.0383838,3.43742477 C6.42886816,3.83027332 6.42886816,4.38026128 6.0383838,4.77310983 L4.71073695,6.10879488 Z"></path>
+        </g>
+    </g>
+</svg>

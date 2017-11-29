@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_advant-5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#489DE0" offset="0%"></stop>
+            <stop stop-color="#2F88CF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.37611607%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F1BF00" offset="0%"></stop>
+            <stop stop-color="#DF8B00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_advant-5">
+            <polygon id="Rectangle-13" fill="#FFFFFF" points="53 30 66.8641542 30 71.9513814 37.0541695 78 46.3149876 78 60 53 60"></polygon>
+            <rect id="Rectangle-13" fill="#FFFFFF" x="13" y="25" width="37" height="35"></rect>
+            <rect id="Rectangle-5" fill="#CBE8FF" x="10" y="67" width="71" height="3" rx="1.5"></rect>
+            <path d="M59.1739318,60 C59.8510956,57.1333 62.4264184,55 65.5,55 C68.5735816,55 71.1489044,57.1333 71.8260682,60 L78,60 L78,49.3162742 L66.595126,30 L53,30 L53,60 L59.1739318,60 Z M59.1739318,63 L52.25,63 L51.5,63 L31.8260682,63 C31.1489044,65.8667 28.5735816,68 25.5,68 C22.4264184,68 19.8510956,65.8667 19.1739318,63 L10,63 L10,61.5 L10,22 L11.5,22 L53,22 L53,23.5 L53,27 L68,27 L68,27.0861689 L68.0155655,27.0646641 L80.9731299,49 L81,49 L81,63 L79.5,63 L71.8260682,63 C71.1489044,65.8667 68.5735816,68 65.5,68 C62.4264184,68 59.8510956,65.8667 59.1739318,63 Z M19.1739318,60 C19.8510956,57.1333 22.4264184,55 25.5,55 C28.5735816,55 31.1489044,57.1333 31.8260682,60 L50,60 L50,25 L13,25 L13,60 L19.1739318,60 Z M19,33 L44,33 L44,36 L19,36 L19,33 Z M19,38 L44,38 L44,41 L19,41 L19,38 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+            <polygon id="Rectangle-14" fill="url(#linearGradient-2)" points="55.9966519 33 62.2076936 33 64.3823482 33 73.4679168 49 55.9966519 49"></polygon>
+        </g>
+    </g>
+</svg>

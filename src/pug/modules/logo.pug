@@ -1,0 +1,6 @@
+mixin logo({ type, size = false, colored = false } = {})
+  - styleClass = 'logo'
+  - styleClass = colored ? `${styleClass}_colored` : styleClass
+  - styleClass = size ? `${styleClass}_${size}` : styleClass
+  a.logo(href='/' class=styleClass)&attributes(attributes)
+    | Заборуз

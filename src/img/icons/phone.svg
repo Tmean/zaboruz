@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_telephone-mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="top-320" transform="translate(-279.000000, -11.000000)" fill="#FFFFFF">
+            <g id="ic_telephone-mobile">
+                <g transform="translate(279.000000, 11.000000)">
+                    <path d="M6.90908086,8.95956583 C4.38915508,11.4947484 10.5744274,17.7175144 13.0943532,15.0670512 L15.0415686,13.1080465 C15.614279,12.5318686 16.4160736,12.5318686 16.988784,13.1080465 L21.5704672,17.7175144 C22.1431776,18.2936473 22.1431776,19.1002963 21.5704672,19.6764742 L20.0814201,21.059301 C17.6760365,23.4792931 11.4907641,21.059301 6.22182838,15.7584647 C0.83835058,10.4576283 -1.45249103,4.23490732 0.952892661,1.81496028 L2.32739763,0.4321334 C2.90010803,-0.144044467 3.7019026,-0.144044467 4.274613,0.4321334 L8.85629623,5.04155634 C9.42900664,5.6177342 9.42900664,6.42438322 8.85629623,7.00056108 L6.90908086,8.95956583 Z" id="ic_telephone-grey"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

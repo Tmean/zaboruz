@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="23px" viewBox="0 0 108 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>bt door-3 disabled</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="7" width="30" height="15" rx="3"></rect>
+        <rect id="path-2" x="78" y="7" width="30" height="15" rx="3"></rect>
+        <path d="M29.9664494,2.12401462 L73.3703523,2.53117865 L73.3703523,2.53117865 C74.9198994,2.54571466 76.1684008,3.80598297 76.1684008,5.35559829 L76.1684008,5.35559829 L76.1684008,5.35559829 C76.1684008,6.88655682 74.9273137,8.12764393 73.3963552,8.12764393 C73.3876874,8.12764393 73.3790197,8.12760327 73.3703523,8.12752197 L29.9664494,7.72035793 L29.9664494,7.72035793 C28.4169022,7.70582192 27.1684008,6.44555361 27.1684008,4.8959383 L27.1684008,4.8959383 L27.1684008,4.8959383 C27.1684008,3.36497976 28.4094879,2.12389265 29.9404464,2.12389265 C29.9491142,2.12389265 29.957782,2.12393331 29.9664494,2.12401462 Z" id="path-3"></path>
+        <circle id="path-4" cx="29" cy="7" r="6"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bt-door-3-disabled">
+            <g id="bt-door-3" transform="translate(0.000000, 1.000000)">
+                <g id="Rectangle-6">
+                    <use fill="#F2F2F2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#E4E4E4" stroke-width="1" x="0.5" y="7.5" width="29" height="14" rx="3"></rect>
+                </g>
+                <g id="Rectangle-6">
+                    <use fill="#F2F2F2" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#E4E4E4" stroke-width="1" x="78.5" y="7.5" width="29" height="14" rx="3"></rect>
+                </g>
+                <g id="Rectangle-5" transform="translate(51.668401, 5.125768) rotate(-365.000000) translate(-51.668401, -5.125768) ">
+                    <use fill="#F2F2F2" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <path stroke="#E4E4E4" stroke-width="1" d="M29.9617592,2.62399262 C29.951103,2.62390931 29.951103,2.62390931 29.9404464,2.62389265 C28.6856303,2.62389265 27.6684008,3.64112214 27.6684008,4.8959383 C27.6684008,6.17124113 28.6958928,7.20841708 29.9711396,7.22037993 L73.3750425,7.62754396 C73.3856987,7.62762727 73.3856987,7.62762727 73.3963552,7.62764393 C74.6511713,7.62764393 75.6684008,6.61041444 75.6684008,5.35559829 C75.6684008,4.08029546 74.6409088,3.0431195 73.3656621,3.03115665 L29.9617592,2.62399262 Z"></path>
+                </g>
+                <g id="Oval-3">
+                    <use fill="#F2F2F2" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <circle stroke="#E4E4E4" stroke-width="1" cx="29" cy="7" r="5.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

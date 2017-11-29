@@ -1,0 +1,68 @@
+.call-us {
+  padding: 30px 0 40px;
+  background-image: linear-gradient(to top, #ebf7ff, #f3faff);
+  text-align: center;
+
+  @include breakpoint-only(tablet) {
+    padding: 40px 0 51px;
+  }
+
+  @include breakpoint-only(desktop) {
+    padding: 42px 0 50px;
+  }
+
+  &__heading {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.24;
+    text-align: center;
+    color: #000000;
+
+    @include breakpoint-up(tablet) {
+      font-size: 36px;
+      line-height: 0.89;
+    }
+  }
+
+  &__phone-numbers-container {
+    text-align: center;
+    margin-top: 30px;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 25px;
+      margin-left: -35px;
+    }
+
+    @include breakpoint-only(desktop) {
+      margin-left: -32px;
+    }
+  }
+
+  &__phone-number {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 7px;
+
+    @include breakpoint-up(tablet) {
+      display: inline-block;
+      margin-left: 35px;
+    }
+
+    &::before {
+      content: '';
+      @include icon(phone-colored, svg);
+      vertical-align: baseline;
+      margin-right: 6px;
+      margin-bottom: 3px;
+    }
+  }
+
+  &__button {
+    margin-top: 25px;
+
+    @include breakpoint-only(desktop) {
+      margin-top: 27px;
+    }
+  }
+}

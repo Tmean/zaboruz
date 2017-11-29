@@ -1,0 +1,26 @@
+.advantages {
+  padding: 22px 0 40px;
+  background-image: linear-gradient(to top, #ebf7ff, #f3faff);
+
+  @include breakpoint-up(tablet) {
+    padding: 40px 0 50px;
+  }
+  
+  &__heading {
+    @include breakpoint-only(desktop) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__items {
+    margin-top: 10px;
+  }
+
+  &__item {
+    margin-top: 30px;
+
+    @include breakpoint-only(desktop) {
+      margin-top: 29px;
+    }
+  }
+}

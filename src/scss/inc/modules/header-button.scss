@@ -1,0 +1,55 @@
+.header-button {
+  @include reset();
+  display: inline-block;
+  text-align: center;
+  width: 42px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: transparent;
+  box-shadow: 0 1px 1px 0 rgba(0, 45, 181, 0);
+  transition: background-color .2s ease-in-out,
+              box-shadow .2s ease-in-out;
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.is-active {
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 45, 181, 0.14);
+  }
+
+  &_menu & {
+    &__icon {
+      @include icon(menu, svg);
+    }
+  }
+
+  &_menu.is-active & {
+    &__icon {
+      @include icon(menu_active, svg);
+    }
+  }
+
+  &_phone & {
+    &__icon {
+      @include icon(phone, svg);
+    }
+  }
+
+  &_phone.is-active & {
+    &__icon {
+      @include icon(phone_active, svg);
+    }
+  }
+
+  &_calculator & {
+    &__icon {
+      @include icon(calculator, svg);
+    }
+  }
+}

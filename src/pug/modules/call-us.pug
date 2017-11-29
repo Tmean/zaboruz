@@ -1,0 +1,11 @@
+mixin call-us({} = {})
+  section.call-us.section
+    .container-fluid
+      h1.call-us__heading Остались вопросы? Звоните!
+      .call-us__phone-numbers-container
+        a(href='tel:84955803036').call-us__phone-number.link.link_container
+          .link__text 8 495 580 30 36
+        a(href='tel:88005552470').call-us__phone-number.link.link_container
+          .link__text 8 800 555 24 70
+      div
+        +call-to-action.call-us__button Заказать звонок

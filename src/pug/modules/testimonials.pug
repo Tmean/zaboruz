@@ -1,0 +1,41 @@
+mixin testimonials({} = {})
+  section.testimonials.section&attributes(attributes)
+    .container-fluid
+      +decorated-heading({
+        text: 'Отзывы от клиентов',
+      }).testimonials__heading
+        .testimonials__controls-container
+          a(href='#').testimonials__link-all.link.link_container
+            span.link__text Все отзывы
+          button.testimonials__slider-arrow.testimonials__slider-arrow_prev.mobile-hidden.js-testimonials__slider-prev
+          button.testimonials__slider-arrow.testimonials__slider-arrow_next.mobile-hidden.js-testimonials__slider-next
+      .testimonials__slider-container.row
+        .testimonials__slider.js-testimonials__slider
+          div.testimonials__slide
+            .row
+              .col-12.col-tablet-5.col-desktop-4.col-desktop-offset-1
+                img(src='img/testimonials-1.jpg' srcset='img/testimonials-1@2x.jpg 2x' alt='Сварной металлический забор длина 45 м').testimonials__slide-img
+              .col-12.col-tablet-7
+                .row
+                  .col-12.col-desktop-10
+                    h2.testimonials__slide-heading Сварной металлический забор длина 45 м
+                    p.testimonials__slide-text Прибор Качинского флуктуационно приводит к появлению тонкодисперсный бурозём, однозначно свидетельствуя о неустойчивости процесса в целом. Почвенная влага, по данным почвенной съемки, физически адсорбирует карбонат кальция. 
+                  .col-12
+                    span.testimonials__slide-divider
+                  .col-12.col-desktop-10
+                    p.testimonials__slide-author Констанин Констанинопольский, г. Петропавловск-Камчатский
+          div.testimonials__slide
+            .row
+              .col-12.col-tablet-5.col-desktop-4.col-desktop-offset-1
+                img(src='img/testimonials-1.jpg' srcset='img/testimonials-1@2x.jpg 2x' alt='Сварной металлический забор длина 45 м').testimonials__slide-img
+              .col-12.col-tablet-7
+                .row
+                  .col-12.col-desktop-10
+                    h2.testimonials__slide-heading Сварной металлический забор длина 45 м
+                    p.testimonials__slide-text Прибор Качинского флуктуационно приводит к появлению тонкодисперсный бурозём, однозначно свидетельствуя о неустойчивости процесса в целом. Почвенная влага, по данным почвенной съемки, физически адсорбирует карбонат кальция. 
+                  .col-12
+                    span.testimonials__slide-divider
+                  .col-12.col-desktop-10
+                    p.testimonials__slide-author Констанин Констанинопольский, г. Петропавловск-Камчатский
+        button.testimonials__slider-arrow.testimonials__slider-arrow_prev.mobile-only.js-testimonials__slider-prev
+        button.testimonials__slider-arrow.testimonials__slider-arrow_next.mobile-only.js-testimonials__slider-next

@@ -1,0 +1,19 @@
+import 'babel-polyfill';
+import './inc/modules/header-button';
+import './inc/modules/menu';
+import './inc/modules/mobile-menu';
+import './inc/modules/mobile-phones';
+import './inc/modules/mobile-table';
+import './inc/modules/popup';
+import './inc/modules/works';
+import './inc/modules/testimonials';
+import './inc/modules/about';
+import './inc/modules/calculator-fence-group';
+import './inc/modules/calculator-range';
+import './inc/modules/calculator-select';
+import './inc/modules/calculator-select-section';
+import './inc/modules/calculator-select-section-item';
+import './inc/modules/call-form';
+
+import './inc/pages/calculator';
+import './inc/pages/calculator_gate';

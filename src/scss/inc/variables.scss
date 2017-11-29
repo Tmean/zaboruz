@@ -1,0 +1,25 @@
+$min-width: 320px;
+$max-width: 1170px;
+
+$breakpoints: (
+  mobile: 320px,
+  tablet: 768px,
+  desktop: 1200px
+);
+
+$gutters: (
+  mobile: 5px,
+  tablet: 10px,
+  desktop: 14px
+);
+
+$min-gutter: 10px;
+
+
+// Computed
+$max-breakpoint-width: 0px;
+@each $bp, $bp-value in $breakpoints {
+  @if $bp-value > $max-breakpoint-width {
+    $max-breakpoint-width: $bp-value;
+  }
+}

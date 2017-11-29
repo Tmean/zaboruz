@@ -1,0 +1,10 @@
+mixin breadcrumbs({ items = [] } = {})
+  .breadcrumbs&attributes(attributes)
+    for item, index in items
+      if index !== items.length - 1
+        a(href=item.href).breadcrumbs__item.link= item.title
+        | &nbsp;
+        span.breadcrumbs__divider →
+        | 
+      else
+        span.breadcrumbs__item.breadcrumbs__item_last= item.title

@@ -1,0 +1,48 @@
+.catalog-preview {
+  background-image: linear-gradient(to top, #ebf7ff, #f3faff);
+  padding: 30px 0 50px;
+
+  @include breakpoint-up(tablet) {
+    padding-top: 41px;
+  }
+
+  &__link-container {
+    text-align: center;
+
+    @include breakpoint-only(mobile) {
+      flex-grow: 1;
+    }
+  }
+
+  &__more {
+    display: inline-block;
+    font-weight: 300;
+
+    @include breakpoint-only(mobile) {
+      margin-top: 5px;
+    }
+
+    &::after {
+      content: '';
+      @include icon(arrow_more, svg);
+      margin-left: 6px;
+    }
+  }
+
+  &__item {
+    margin-top: 30px;
+
+    @include breakpoint-only(mobile) {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    @include breakpoint-up(tablet) {
+      margin-top: 35px;
+    }
+
+    @include breakpoint-only(desktop) {
+      margin-top: 42px;
+    }
+  }
+}

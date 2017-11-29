@@ -1,0 +1,46 @@
+$root: '.calculator-radio';
+
+#{$root} {
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__item-input {
+    flex-shrink: 0;
+  }
+
+  &__item-input:checked + &__item-body &__item-title {
+    color: #d39900;
+  }
+
+  &__item-body {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  &__item-title {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2f88cf;
+    transition: color .1s ease-in-out;
+  }
+
+  &__item-content {
+    margin-top: 9px;
+  }
+
+  &.is-disabled {
+    pointer-events: none;
+
+    #{$root}__item-title {
+      color: #c5c5c5 !important;
+    }
+  }
+}

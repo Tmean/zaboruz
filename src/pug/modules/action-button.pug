@@ -1,0 +1,4 @@
+mixin action-button({ href = false } = {})
+  - tag = href ? 'a' : 'button'
+  #{tag}.action-button(href=href)&attributes(attributes)
+    block

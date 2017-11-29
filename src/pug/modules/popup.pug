@@ -1,0 +1,8 @@
+mixin popup({ name, heading = false, type = false } = {})
+  - typeClass = type ? `popup_${type}` : false
+  .popup.js-popup.js-popup__close-exact(data-popup=name class=typeClass)
+    .popup__content
+      if heading
+        h2.popup__heading= heading
+      button.popup__close.js-popup__close
+      block

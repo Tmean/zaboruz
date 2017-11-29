@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_print</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.37611607%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F1BF00" offset="0%"></stop>
+            <stop stop-color="#DF8B00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_print" fill="url(#linearGradient-1)">
+            <path d="M3.199,3.199 L12.801,3.199 L12.801,0 L3.199,0 L3.199,3.199 Z M13.602,7.199 C13.121,7.199 12.801,6.879 12.801,6.398 C12.801,5.922 13.121,5.602 13.602,5.602 C14.078,5.602 14.398,5.922 14.398,6.398 C14.398,6.879 14.078,7.199 13.602,7.199 L13.602,7.199 Z M4.801,12.801 L11.199,12.801 L11.199,8.801 L4.801,8.801 L4.801,12.801 Z M13.602,4 L2.398,4 C1.039,4 0,5.039 0,6.398 L0,11.199 L3.199,11.199 L3.199,14.398 L12.801,14.398 L12.801,11.199 L16,11.199 L16,6.398 C16,5.039 14.961,4 13.602,4 L13.602,4 Z" id="Page-1"></path>
+        </g>
+    </g>
+</svg>

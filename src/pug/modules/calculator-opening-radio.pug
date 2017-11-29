@@ -1,0 +1,10 @@
+mixin calculator-opening-radio({ items, name = Math.random(), isDisabled = false } = {})
+  .calculator-opening-radio(class=(isDisabled ? 'is-disabled' : false))&attributes(attributes)
+    .calculator-opening-radio__container
+      for item, index in items
+        label.calculator-opening-radio__item
+          input(type='radio' value=item.value name=name checked=(index === 0) disabled=isDisabled).calculator-opening-radio__input
+          .calculator-opening-radio__item-image-container
+            img(src=item.image alt='').calculator-opening-radio__item-image
+            img(src=item.imageActive alt='').calculator-opening-radio__item-image-active
+            img(src=item.imageDisabled alt='').calculator-opening-radio__item-image-disabled

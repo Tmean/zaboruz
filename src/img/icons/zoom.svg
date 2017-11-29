@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.37611607%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F1BF00" offset="0%"></stop>
+            <stop stop-color="#DF8B00" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="30" height="30" rx="15"></rect>
+        <filter x="-10.5%" y="-5.3%" width="121.1%" height="121.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.169836957 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bt-zoom-item">
+            <g id="Group" transform="translate(3.000000, 3.000000)">
+                <g id="Rectangle-11">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#FFFFFF" stroke-width="3" x="-1.5" y="-1.5" width="33" height="33" rx="16.5"></rect>
+                </g>
+                <g id="Page-1" filter="url(#filter-3)" transform="translate(5.000000, 5.000000)" fill="#FFFFFF">
+                    <path d="M7.39305272,1.34407187 C10.737324,1.34407187 13.4428641,4.06561762 13.4428641,7.39311252 C13.4428641,10.7374109 10.737324,13.4431778 7.39305272,13.4431778 C4.04960108,13.4431778 1.344061,10.721632 1.344061,7.39311252 C1.344061,4.06561762 4.06558473,1.34407187 7.39305272,1.34407187 M7.39305272,14.7872496 C9.19654119,14.7872496 10.8358899,14.1474886 12.1149917,13.0661245 L17.8527121,18.8038913 C17.9840649,18.9342206 18.1471801,19 18.3281232,19 C18.4914433,19 18.6723864,18.9342206 18.8037392,18.8038913 C19.0654203,18.5411836 19.0654203,18.1145396 18.8037392,17.8530614 L13.0660188,12.1152946 C14.1313906,10.8359775 14.7869251,9.1806318 14.7869251,7.39311252 C14.7869251,3.31151113 11.4754408,0 7.39305272,0 C3.32746799,0 0,3.3274949 0,7.39311252 C0,11.4755336 3.32746799,14.7872496 7.39305272,14.7872496" id="Fill-1"></path>
+                    <path d="M6.90113235,11.401315 C6.90113235,11.7375502 7.16358213,12 7.49963473,12 C7.83641787,12 8.09886765,11.7375502 8.09886765,11.401315 L8.09886765,8.09886765 L11.4014976,8.09886765 C11.7373676,8.09886765 12,7.83641787 12,7.49963473 C12,7.16358213 11.7373676,6.90113235 11.4014976,6.90113235 L8.09886765,6.90113235 L8.09886765,3.59868501 C8.09886765,3.26263241 7.83641787,3 7.49963473,3 C7.16358213,3 6.90113235,3.26263241 6.90113235,3.59868501 L6.90113235,6.90113235 L3.59868501,6.90113235 C3.26263241,6.90113235 3,7.16358213 3,7.49963473 C3,7.83641787 3.26263241,8.09886765 3.59868501,8.09886765 L6.90113235,8.09886765 L6.90113235,11.401315 Z" id="Fill-4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

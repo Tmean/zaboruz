@@ -1,0 +1,6 @@
+mixin calculator-radio-bar({ name = Math.random(), items = [], isDisabled = false } = {})
+  .calculator-radio-bar(class=(isDisabled ? 'is-disabled' : false))&attributes(attributes)
+    for item, index in items
+      label.calculator-radio-bar__item
+        input(type='radio' name=name value=item.value checked=(index === 0) disabled=isDisabled).calculator-radio-bar__input
+        span.calculator-radio-bar__content= item.text

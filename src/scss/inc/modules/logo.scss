@@ -1,0 +1,12 @@
+.logo {
+  @include icon(logo, svg);
+  font-size: 0;
+
+  &_big {
+    @include icon(logo_big, svg);
+  }
+
+  &_colored_big {
+    @include icon(logo-colored_big, svg);
+  }
+}

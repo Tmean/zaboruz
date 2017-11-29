@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_process-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="63.6558661 101 14 101 14 12 14 12 103 12 103 65.6889866"></polyline>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="89" height="89" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#489DE0" offset="0%"></stop>
+            <stop stop-color="#2F88CF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_process-1">
+            <use id="Rectangle-18" stroke="#67B1EC" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="3" xlink:href="#path-1"></use>
+            <path d="M70,82.9994637 L70,91 L67,91 L67,81 L60,81 L60,91 L57,91 L57,81 L50,81 L50,91 L47,91 L47,81 L40,81 L40,91 L37,91 L37,81 L30,81 L30,91 L27,91 L27,26.6631844 C25.8175263,26.1014525 25,24.896198 25,23.5 C25,21.5670034 26.5670034,20 28.5,20 C30.4329966,20 32,21.5670034 32,23.5 C32,24.896198 31.1824737,26.1014525 30,26.6631844 L30,41 L37,41 L37,34 L40,34 L40,41 L47,41 L47,34 L50,34 L50,41 L57,41 L57,34 L60,34 L60,41 L67,41 L67,34 L70,34 L70,41 L77,41 L77,34 L80,34 L80,41 L87,41 L87,26.6631844 C85.8175263,26.1014525 85,24.896198 85,23.5 C85,21.5670034 86.5670034,20 88.5,20 C90.4329966,20 92,21.5670034 92,23.5 C92,24.896198 91.1824737,26.1014525 90,26.6631844 L90,74.8131641 L101.647251,78.4532747 L90,83.0073088 L90,85.4701275 L102.636637,98.106765 L96.1075945,104.636562 L81.7004142,90.2293818 L76.452596,103.647176 L70,82.9994637 Z M80,71.6878683 L87,73.8755753 L87,44 L80,44 L80,71.6878683 Z M70,68.5625725 L77,70.7502795 L77,44 L70,44 L70,68.5625725 Z M67,73.3997402 L65,66.9999246 L67,67.6249837 L67,44 L60,44 L60,78 L67,78 L67,73.3997402 Z M57,78 L57,44 L50,44 L50,78 L57,78 Z M47,44 L40,44 L40,78 L47,78 L47,44 Z M30,78 L37,78 L37,44 L30,44 L30,78 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+            <path d="M76.0571359,106.781631 L63,65 L104.781988,78.0581072 L89.9764743,83.8470107 L103.960119,97.8306555 L95.8314697,105.960244 L81.8476023,91.9763764 L76.0571359,106.781631 Z M76.295714,99.9605942 L81.0008841,87.9302607 L95.8313773,102.760754 L100.760814,97.8307479 L85.9300982,83.0000321 L97.9601726,78.2963156 L66.447658,68.4477226 L76.295714,99.9605942 Z" id="Page-1" fill="#F1F5FF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
