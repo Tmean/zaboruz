@@ -1,8 +1,10 @@
 import $ from 'jquery';
 
-import { $document } from '../globals';
+import { $document, detectBreakpoint } from '../globals';
 
 $document.ready(() => {
+  const $groups = $('.js-calculator-fence-group');
+
   $document.on('click.calculator-fence-group', '.js-calculator-fence-group__toggle', (event) => {
     const $group = $(event.currentTarget).parents('.js-calculator-fence-group');
     const $content = $group.find('.js-calculator-fence-group__content');
@@ -29,6 +31,20 @@ $document.ready(() => {
           maxHeight: 'none',
           overflow: 'auto',
         });
+      });
+    }
+  });
+
+  detectBreakpoint.on('change', (current) => {
+    if (current === 'mobile') {
+      $groups.filter(':not(.is-active)').find('.js-calculator-fence-group__content').css({
+        maxHeight: '0px',
+        overflow: 'hidden',
+      });
+    } else {
+      $groups.filter(':not(.is-active)').find('.js-calculator-fence-group__content').css({
+        maxHeight: 'none',
+        overflow: 'auto',
       });
     }
   });

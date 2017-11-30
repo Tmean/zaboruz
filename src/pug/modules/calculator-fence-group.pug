@@ -1,12 +1,12 @@
 mixin calculator-fence-group({ heading = '', isActive = false, collapsing = true, icon = false } = {})
   - isActiveClass = isActive || !collapsing ? 'is-active' : false
   .calculator-fence-group.js-calculator-fence-group(class=isActiveClass)&attributes(attributes)
-    .calculator-fence-group__header
-      .calculator-fence-group__heading= heading
+    button.calculator-fence-group__header.js-calculator-fence-group__toggle
+      span.calculator-fence-group__heading= heading
         if icon
           img(src=icon alt=heading).calculator-fence-group__icon
       if collapsing
         span.calculator-fence-group__header-line
-        button.calculator-fence-group__toggle.js-calculator-fence-group__toggle
+        span.calculator-fence-group__toggle
     .calculator-fence-group__content.js-calculator-fence-group__content
       block
