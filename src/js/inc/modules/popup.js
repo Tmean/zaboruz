@@ -31,6 +31,11 @@ class Popup {
     this.animating = false;
     this.active = false;
 
+    this.touchPos = {
+      x: 0,
+      y: 0,
+    };
+
     this.debouncePosition = debounce(this.position, 250);
   }
 
@@ -63,6 +68,31 @@ class Popup {
     this.animating = true;
     this.active = true;
     this.activateLinks();
+
+    $document.on(`touchstart.popup-background-handler_${this.name}`, (event) => {
+      this.touchPos = {
+        x: event.originalEvent.touches[0].pageX,
+        y: event.originalEvent.touches[0].pageY,
+      };
+    });
+
+    $document.on(`touchend.popup-background-handler_${this.name}`, (event) => {
+      if (
+        Math.abs(event.originalEvent.changedTouches[
+          event.originalEvent.changedTouches.length - 1].pageX
+          - this.touchPos.x) <= 10
+        && Math.abs(event.originalEvent.changedTouches[
+          event.originalEvent.changedTouches.length - 1].pageY
+          - this.touchPos.y) <= 10
+      ) {
+        const $target = $(event.target);
+
+        if (!($target.hasClass(className) || $target.hasClass(linkClassName) ||
+          $target.parents(`.${className}`).length !== 0)) {
+          this.hide();
+        }
+      }
+    });
 
     $document.on(`click.popup-background-handler_${this.name}`, (event) => {
       const $target = $(event.target);
@@ -100,7 +130,7 @@ class Popup {
     this.animating = true;
     this.deactivateLinks();
 
-    $document.off(`click.popup-background-handler_${this.name}`);
+    $document.off(`click.popup-background-handler_${this.name} touchstart.popup-background-handler_${this.name} touchend.popup-background-handler_${this.name}`);
 
     return this;
   }

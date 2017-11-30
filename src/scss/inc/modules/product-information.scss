@@ -159,6 +159,11 @@
     }
   }
 
+  &__block-table-container {
+    max-width: 100%;
+    overflow: auto;
+  }
+
   &__block-table {
     border-collapse: collapse;
     margin-top: 20px;

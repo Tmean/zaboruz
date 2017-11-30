@@ -28,9 +28,9 @@ mixin product-information({} = {})
               li Электрон полупрозрачен Струя.
         .product-information__block(id='price')
           h2.product-information__block-heading Цена заборов
-          p.product-information__block-text Электрон полупрозрачен для жесткого излучения. Струя, по данным астрономических наблюдений, облучает гравитационный гамма-квант, и этот процесс может повторяться многократно. 
-          div.mobile-hidden
-            table.product-information__block-table.js-product-information__table
+          p.product-information__block-text Электрон полупрозрачен для жесткого излучения. Струя, по данным астрономических наблюдений, облучает гравитационный гамма-квант, и этот процесс может повторяться многократно.
+          .product-information__block-table-container
+            table.product-information__block-table
               thead
                 tr
                   th Вид забора
@@ -52,11 +52,6 @@ mixin product-information({} = {})
                 tr
                   td Газонные ограждения до 50 м
                   td от 98 000
-          .product-information__mobile-table-button-container.mobile-only
-            +mobile-table-button({
-              heading: 'Цены',
-              target: '.js-product-information__table',
-            })
         .product-information__block(id='usage')
           h2.product-information__block-heading Применение заборов с кирпичными столбами
           p.product-information__block-text Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта, которое возникает с ситуации несоответствия желаемого и действительного, поэтому филогенез отталкивает институциональный психоз. Интеллект, согласно традиционным представлениям, начинает закон.

@@ -49,7 +49,7 @@ $root: '.menu';
     &_second-level {
       position: absolute;
       top: calc(100% + 1px);
-      left: 0;
+      left: -1px;
       height: auto;
       flex-direction: column;
 
