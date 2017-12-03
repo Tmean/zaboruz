@@ -23,7 +23,7 @@ $document.ready(() => {
   const show = () => {
     $htmlAndBody.scrollTop(0);
     lockContent(false);
-    breakpointDetection = detectBreakpoint.on('change', (to) => { 
+    breakpointDetection = detectBreakpoint.on('change', (to) => {
       if (to !== 'mobile') {
         $button.removeClass('is-active');
         hide();
