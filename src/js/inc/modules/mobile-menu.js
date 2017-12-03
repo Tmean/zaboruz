@@ -1,14 +1,16 @@
 import $ from 'jquery';
 import { after } from 'lodash';
-import { $document, $htmlAndBody, lockContent, unlockContent } from '../globals';
+import { $document, $htmlAndBody, lockContent, unlockContent, detectBreakpoint } from '../globals';
 
 $document.ready(() => {
   const $menu = $('.js-mobile-menu');
   const $button = $('.js-mobile-menu__button');
   const $arrows = $('.js-mobile-menu__arrow');
+  let breakpointDetection;
 
   const hide = () => {
     unlockContent();
+    breakpointDetection();
     $menu.stop().animate({
       opacity: 0,
     }, 500, () => {
@@ -21,6 +23,12 @@ $document.ready(() => {
   const show = () => {
     $htmlAndBody.scrollTop(0);
     lockContent(false);
+    breakpointDetection = detectBreakpoint.on('change', (to) => { 
+      if (to !== 'mobile') {
+        $button.removeClass('is-active');
+        hide();
+      }
+    });
     setTimeout(() => {
       lockContent(false);
     }, 50);

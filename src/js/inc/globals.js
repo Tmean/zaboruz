@@ -64,7 +64,7 @@ export function detectBreakpoint() {
 }
 
 detectBreakpoint.on = function on(event, func) {
-  emitter.on(event, func);
+  return emitter.on(event, func);
 };
 
 export const getCurrentBreakpoint = function getCurrentBreakpoint() {

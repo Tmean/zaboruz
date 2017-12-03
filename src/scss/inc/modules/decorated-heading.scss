@@ -8,10 +8,13 @@ $root: '.decorated-heading';
   }
 
   &__section {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 100%;
-    align-items: center;
+
+    @include breakpoint-up(tablet) {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 100%;
+      align-items: center;
+    }
 
     &:first-child {
       #{$root}__line:first-child {

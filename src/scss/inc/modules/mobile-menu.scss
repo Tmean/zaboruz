@@ -3,6 +3,8 @@ $root: '.mobile-menu';
 #{$root} {
   display: none;
   background-color: rgba(72, 157, 224, 0.96);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
   position: absolute;
   top: 45px;
   right: 0;

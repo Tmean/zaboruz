@@ -10,7 +10,7 @@ export default class Emitter {
 
     this.eventList[event].push(callback);
 
-    return function unbind() {
+    return () => {
       this.eventList[event] = this.eventList[event]
         .filter(func => func !== callback);
     };
